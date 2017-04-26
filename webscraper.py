@@ -10,6 +10,11 @@ import bs4
 from bs4 import BeautifulSoup
 import re
 
+
+def equal_length(a,b,c,d,e):
+    return len(a) == len(b) == len(c) == len(d) == len(e)
+
+
 # empty list to populate each rider's details
 rider_rank = []
 rider_country = []
@@ -24,9 +29,6 @@ rider_name_txt = open('C:\Users\Kevin\Desktop\webscraper\_name.txt', 'w')
 rider_team_txt = open('C:\Users\Kevin\Desktop\webscraper\_team.txt', 'w')
 rider_time_txt = open('C:\Users\Kevin\Desktop\webscraper\_time.txt', 'w')
 
-#url = "http://www.procyclingstats.com/race/Tirreno-Adriatico_2017_Stage_7"
-#url = "http://www.procyclingstats.com/race/Tour_de_Romandie_2017_Stage_1"
-#url = "http://www.procyclingstats.com/race/_La_Fleche_Wallonne__2017"
 url = "http://www.procyclingstats.com/race/Paris-Roubaix_2017"
 res = requests.get(url)
 
@@ -77,11 +79,27 @@ for child in result_parent.children:
     rider_time.append(time[0].string[1:])
 
 
+# if all lists are equal (they should be), build a list of lists
+if equal_length(rider_rank, rider_country, rider_name, rider_team, rider_time):
+    full_results = []
 
-rider_rank_txt.write(str(rider_rank))
-rider_country_txt.write(str(rider_country))
-rider_name_txt.write(str(rider_name))
-rider_team_txt.write(str(rider_team))
-rider_time_txt.write(str(rider_time))
+    for ix in range(len(rider_rank)):
+        full_results.append([rider_rank[ix],rider_country[ix],rider_name[ix],rider_team[ix],rider_time[ix]])
+
+    for element in full_results:
+        print element
+
+
+
+# write each list to corresponding text file for checking
+# rider_rank_txt.write(str(rider_rank))
+# rider_country_txt.write(str(rider_country))
+# rider_name_txt.write(str(rider_name))
+# rider_team_txt.write(str(rider_team))
+# rider_time_txt.write(str(rider_time))
 
 rider_rank_txt.close()
+rider_country_txt.close()
+rider_name_txt.close()
+rider_team_txt.close()
+rider_time_txt.close()
