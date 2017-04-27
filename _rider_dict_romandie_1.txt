@@ -1,0 +1,350 @@
+Andre_Greipel --- Sprinter 
+
+Peter_Sagan --- One-day-races Sprinter 
+
+Alexander_Kristoff --- One-day-races Sprinter 
+
+Edvald_Boasson_Hagen --- Sprinter 
+
+Michael_Matthews --- One-day-races Sprinter 
+
+Jasper_Stuyven --- One-day-races 
+
+Ramunas_navardauskas --- Sprinter 
+
+Christophe_Laporte --- One-day-races Sprinter 
+
+Sam_Bennett --- One-day-races Sprinter 
+
+Reinardt_Janse_Van_Rensburg --- Sprinter 
+
+Davide_Cimolai --- One-day-races Sprinter 
+
+Daniel_Mclay --- One-day-races Sprinter 
+
+Leigh_Howard --- One-day-races Sprinter 
+
+Ariel_Maximiliano_Richeze --- Sprinter 
+
+Anthony_Roux --- One-day-races 
+
+John_Degenkolb --- One-day-races Sprinter 
+
+Ramon_Sinkeldam --- Sprinter 
+
+Sep_Vanmarcke --- One-day-races 
+
+Michael_Valgren_Andersen --- GC One-day-races 
+
+Alejandro_Valverde --- GC One-day-races 
+
+Andrei_Grivko --- GC 
+
+Roman_Kreuziger_1 --- GC 
+
+Geoffrey_Soupe --- Time-Trialist 
+
+Oscar_Gatto --- One-day-races 
+
+Daniel_Martin_1 --- GC One-day-races 
+
+Jacopo_Guarnieri --- One-day-races Sprinter 
+
+Arthur_Vichot --- One-day-races 
+
+nairo_Quintana --- GC 
+
+Jurgen_Roelandts --- One-day-races Sprinter 
+
+Stef_Clement --- Time-Trialist GC 
+
+Romain_Bardet --- GC 
+
+Diego_Rosa --- GC One-day-races 
+
+Richie_Porte --- GC 
+
+Adam_Yates --- GC One-day-races 
+
+Louis_Meintjes --- GC 
+
+Markel_Irizar --- Time-Trialist GC 
+
+Dylan_Van_Baarle --- GC 
+
+Adrien_Petit --- One-day-races Sprinter 
+
+Maciej_Bodnar --- Time-Trialist 
+
+Fabio_Sabatini --- Sprinter 
+
+Marcel_Sieberg --- One-day-races 
+
+Tony_Gallopin --- One-day-races 
+
+Roy_Curvers --- One-day-races 
+
+Cyril_Gautier --- One-day-races 
+
+Michael_Albasini --- One-day-races 
+
+Angel_Vicioso --- GC 
+
+Haimar_Zubeldia --- GC 
+
+Alberto_Losada --- GC 
+
+Sebastien_Reichenbach --- GC 
+
+Pierre_Rolland --- GC 
+
+Frank_Schleck --- GC One-day-races 
+
+Joaquim_Rodriguez --- GC One-day-races 
+
+Yukiya_Arashiro --- GC One-day-races 
+
+Domenico_Pozzovivo --- GC 
+
+Emanuel_Buchmann --- GC 
+
+Michael_Schar --- GC 
+
+Brent_Bookwalter --- GC 
+
+Paul_Martens --- One-day-races 
+
+Fabio_Aru --- GC 
+
+Bernhard_Eisel --- One-day-races Sprinter 
+
+Marcel_Kittel --- Sprinter 
+
+Matteo_Tosatto --- One-day-races 
+
+Pierre_Luc_Perichon --- GC One-day-races 
+
+Adam_Hansen --- GC 
+
+Gregory_Henderson --- Sprinter 
+
+Julien_Vermote --- Time-Trialist GC 
+
+Iljo_Keisse --- One-day-races 
+
+Julian_Alaphilippe --- One-day-races 
+
+Chris_Anker_Sorensen --- GC One-day-races 
+
+Jan_Bakelants --- GC One-day-races 
+
+Alexis_Vuillermoz --- GC 
+
+Imanol_Erviti --- GC 
+
+Ben_Gastauer --- GC 
+
+Samuel_Dumoulin --- One-day-races Sprinter 
+
+Mikael_Cherel --- GC 
+
+Florian_Vachon --- One-day-races 
+
+Winner_Anacona --- GC 
+
+Peter_Stetina --- GC 
+
+Jan_Polanc --- GC One-day-races 
+
+Kristijan_Durasek --- GC One-day-races 
+
+Armindo_Fonseca --- One-day-races 
+
+Anthony_Delaplace --- GC One-day-races 
+
+Serge_Pauwels --- GC 
+
+Ion_Izagirre --- GC 
+
+Tanel_Kangert --- GC 
+
+Warren_Barguil --- GC 
+
+Tejay_Van_Garderen --- GC 
+
+Patrick_Konrad --- GC 
+
+Georg_Preidler --- GC 
+
+Daniel_Teklehaimanot --- Sprinter 
+
+Amael_Moinard --- GC 
+
+Cesare_Benedetti --- One-day-races 
+
+Jan_Barta --- Time-Trialist GC 
+
+Rafal_Majka --- GC 
+
+Kristijan_Koren --- One-day-races 
+
+Damiano_Caruso --- GC 
+
+Luka_Pibernik --- One-day-races 
+
+Jarlinson_Pantano --- GC 
+
+Antoine_Duchesne --- One-day-races 
+
+nelson_Oliveira --- Time-Trialist 
+
+Bartosz_Huzarski --- GC 
+
+Steve_Morabito --- GC 
+
+William_Bonnet --- One-day-races Sprinter 
+
+Jeremy_Roy --- GC 
+
+Daniel_Moreno --- GC One-day-races 
+
+Jerome_Coppel --- GC 
+
+Luis_Angel_Mate --- GC One-day-races 
+
+Eduardo_Sepulveda --- GC 
+
+Andreas_Schillinger --- One-day-races 
+
+Ruben_Plaza --- GC 
+
+Daryl_Impey --- Sprinter 
+
+Stephen_Cummings --- GC 
+
+Greg_Van_Avermaet --- One-day-races 
+
+Christopher_Juul_jensen --- GC 
+
+Luke_Durbridge --- Time-Trialist 
+
+Tom_Jelte_Slagter --- One-day-races 
+
+Paolo_Tiralongo --- GC 
+
+Vincenzo_nibali --- GC 
+
+Luis_Leon_Sanchez --- GC 
+
+Martin_Elmiger --- One-day-races 
+
+Wilco_Kelderman --- GC 
+
+Alex_Howes --- GC One-day-races 
+
+Brice_Feillu --- GC 
+
+Matteo_Bono --- GC 
+
+Maarten_Wynants --- One-day-races 
+
+Robert_Kiserlovski --- GC 
+
+Ilnur_Zakarin --- GC 
+
+Jakob_Fuglsang --- GC 
+
+Albert_Timmer --- GC 
+
+Alexis_Gougeard --- GC One-day-races 
+
+Sylvain_Chavanel --- GC 
+
+Geraint_Thomas --- GC 
+
+Wout_Poels --- GC 
+
+Sergio_Luis_Henao --- GC 
+
+Mikel_Landa --- GC 
+
+Mikel_nieve --- GC 
+
+Luke_Rowe --- One-day-races 
+
+Christopher_Froome --- GC 
+
+Vasil_Kiryienka --- Time-Trialist 
+
+Ian_Stannard --- One-day-races 
+
+Marco_Haller --- Sprinter 
+
+nicolas_Edet --- GC 
+
+Arnold_Jeannesson --- GC 
+
+Rui_Costa --- GC One-day-races 
+
+Bauke_Mollema --- GC 
+
+Gregory_Rast --- One-day-races 
+
+Paul_Voss --- One-day-races 
+
+Cyril_Lemoine --- GC 
+
+Petr_Vakoc --- One-day-races 
+
+Tsgabu_Gebremaryam_Grmay --- GC 
+
+Aleksey_Lutsenko --- One-day-races 
+
+Jerome_Cousin --- GC 
+
+Lars_Ytting_Bak --- GC 
+
+Thomas_De_Gendt --- GC 
+
+Robert_Wagner --- One-day-races Sprinter 
+
+George_Bennett --- GC 
+
+Natnael_Berhane --- GC 
+
+Reto_Hollenstein --- GC 
+
+Laurens_Ten_Dam --- GC 
+
+Sondre_Holst_Enger --- Sprinter 
+
+Simon_Geschke --- One-day-races 
+
+Bert_Jan_Lindeman --- One-day-races 
+
+Marcus_Burghardt --- One-day-races 
+
+Dylan_Groenewegen --- One-day-races Sprinter 
+
+Mathew_Hayman --- One-day-races 
+
+Yohann_Gene --- GC Sprinter 
+
+Thomas_Voeckler --- GC One-day-races 
+
+Bryan_Coquard --- Sprinter 
+
+Timo_Roosen --- Sprinter 
+
+Lawson_Craddock --- GC 
+
+Oliver_naesen --- One-day-races 
+
+Romain_Sicard --- GC 
+
+Fabrice_Jeandesboz --- GC 
+
+Vegard_Breen --- GC 
+
+Tony_Martin --- Time-Trialist GC 
+
