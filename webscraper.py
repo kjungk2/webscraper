@@ -10,34 +10,93 @@ import bs4
 from bs4 import BeautifulSoup
 import re
 import operator
+import time
+
+#CONSTANTS
+PCS_HOME_URL = 'http://www.procyclingstats.com'
+
+'''
+Instantiates a rider object.
+Access to:
+  raceday, rank, country_code, name, team, time, country_name, discipline
+'''
+class Rider(object):
+
+	def __init__(self, raceday, rank, country_code, name, team, time):
+		self.raceday = raceday
+		self.rank = rank
+		self.country_code = country_code
+		self.name = name
+		self.team = team
+		self.time = time
+
+	def raceday(self):
+		return self.raceday
+
+	def rank(self):
+		return str(self.rank)
+
+	def country_code(self):
+		return self.country_code
+
+	def name(self):
+		return self.name
+
+	def team(self):
+		return self.team
+
+	def time(self):
+		return self.time
+
+	# Returns any discipline/s over 33% of total points by specialty
+	def discipline(self):
+
+		# parse rider page to get BeautifulSoup object
+		# if PCS' markup changes, then this method will need to change
+		soup = (parse_url(PCS_HOME_URL + '/rider/' + self.name))
+
+		pbs_row_div = soup.find_all("div", style = re.compile("^display: inline-block;"))
+
+		# create a discipline dictionary
+		disc_dict = {"One-day-races" : pbs_row_div[0].string,
+		                         "GC" : pbs_row_div[2].string,
+								 "Time-Trialist" : pbs_row_div[4].string,
+								 "Sprinter" : pbs_row_div[6].string
+								 }
+
+		# Iterate through the dictionary to find best discipline/s
+		points_sum = 0
+		for points in disc_dict.values():
+			# cast to float so we can get a decimal
+			points_sum += float(points)
+
+		# list that will be returned
+		discipline_list = []
+
+		# sets a threshhold, otherwise there is not a sufficient sample of data
+		if points_sum < 400:
+			discipline_list = ['Inexperienced']
+			return discipline_list
+
+		# the disc_dict[key] is a NavigableString so cast it to int
+		for key in disc_dict.keys():
+			discipline_ratio = int(disc_dict[key]) / points_sum
+			if discipline_ratio >= 0.33:
+				discipline_list.append(key)
+
+		# if list is empty, rider does not have a value > 33% so return the largest
+		if not discipline_list:
+			#find the maximum value and return that key, used stackflow for this
+			discipline_list.append(max(disc_dict.iteritems(), key=operator.itemgetter(1))[0])
+
+		return discipline_list
 
 
-# returns True if 5 elements are of equal length
-# use to check if html parsing was done evenly and consistently
-def equal_length(a,b,c,d,e):
-    return len(a) > 0 and len(a) == len(b) == len(c) == len(d) == len(e)
-
-
-# takes a URL of type string and returns BeautifulSoup object
-def parse_url(url):
-
-    res = requests.get(url)
-
-    # make sure request.get is successful
-    try:
-        res.raise_for_status()
-    except Exception as exc:
-        print('There was a problem: %s' % (exc))
-
-    # use BS4 library to parse into a BeautifulSoup object
-    data = res.text
-    return BeautifulSoup(data, "html.parser")
-
-
-# function that takes a BeautifulSoup object and empty lists as input
-# soup is scraped and desired data is appended to lists
-# return a list of lists: [0]=rank, [1]=country, [2]=name, [3]=team, [4]=time
-# if changes are made in PCS' markup, then this fn will need to change
+'''
+Returns a list of lists: [0]=rank, [1]=country, [2]=name, [3]=team, [4]=time
+Requires a BeautifulSoup object, use parse_url function
+if PCS' markup changes, then this function will need to change
+'''
 def scrape_results_page(soup):
 
     # empty list to populate each rider's details
@@ -90,77 +149,48 @@ def scrape_results_page(soup):
         print "ERROR: Something went wrong with the results page scrape"
 
 
-# function that takes a BeautifulSoup object as input
-# soup is scraped and desired data is inserted into a dict
-# return a dict
-# if changes are made in PCS' markup, then this fn will need to change
-def scrape_rider_page(soup):
-    # finds all divs with class of pbsRow, aka 'points by specialty'
-    # use class_ to avoid conflict with python kw 'class'
-    pbs_row_div = soup.find_all("div", style = re.compile("^display: inline-block;"))
-
-    rider_discipline_dict = {
-        "One-day-races" : pbs_row_div[0].string,
-        "GC" : pbs_row_div[2].string,
-        "Time-Trialist" : pbs_row_div[4].string,
-        "Sprinter" : pbs_row_div[6].string
-    }
-
-    return rider_discipline_dict
+''' Returns True if 5 elements are of equal length
+To check if html parsing was done evenly and consistently
+'''
+def equal_length(a,b,c,d,e):
+    return len(a) > 0 and len(a) == len(b) == len(c) == len(d) == len(e)
 
 
-# takes in a dictionary of GC: xx, Sprinter: xx, etc
-# if any of those values are above 0.33333 of total points, that is a discipline for the rider
-# returns a list of disciplines that comprise 33% of a rider's total PCS points
-def get_discipline(dict):
-    points_sum = 0
-    for points in dict.values():
-        # cast to float so we can get a decimal
-        points_sum += float(points)
+'''
+Returns BeautifulSoup object
+Requires a url of type string
+'''
+def parse_url(url):
 
-    # list that will be returned
-    discipline_list = []
+    res = requests.get(url)
 
-    # the dict[key] is a NavigableString so cast it to int
-    for key in dict.keys():
-        discipline_ratio = int(dict[key]) / points_sum
-        if discipline_ratio >= 0.33:
-            discipline_list.append(key)
+    # make sure request.get is successful
+    try:
+        res.raise_for_status()
+    except Exception as exc:
+        print('There was a problem: %s' % (exc))
 
-    # if list is empty, rider does not have a value > 33% so retur the largest
-    if not discipline_list:
-        #find the maximum value and return that key, used stackflow for this
-        discipline_list.append(max(dict.iteritems(), key=operator.itemgetter(1))[0])
-    return discipline_list
+    # use BS4 library to parse into a BeautifulSoup object
+    data = res.text
+    return BeautifulSoup(data, "html.parser")
 
 
+# This should be the only var to change for any new raceday
+raceday = 'Milano-Sanremo_2017'
 
-# as a test, parse the tour de romandie page, scrape it, get each rider name
-# parse that rider's page and get their points by specialty
-romandie_stage_1_soup = parse_url('http://www.procyclingstats.com/race.php?id=163735')
+start = time.time()
+scraped_results_page = scrape_results_page(parse_url(PCS_HOME_URL + '/race/' + raceday))
 
-# this var is a list of lists
-romandie_stage_1_scraped = scrape_results_page(romandie_stage_1_soup)
+count = 1
+for rider_result_list in scraped_results_page:
+    new_rider = Rider(raceday, rider_result_list[0], rider_result_list[1], rider_result_list[2], rider_result_list[3], rider_result_list[4])
 
-my_file = open('C:\Users\Kevin\Desktop\webscraper\_rider_dict_romandie_1.txt', 'w')
+    print str(new_rider.name) + " -- " + str(new_rider.discipline())
+    count += 1
 
-for sub_list in romandie_stage_1_scraped:
+end = time.time()
+print '\nParsed' + str(count) + 'pages.'
+print '\n RunTime = '
+print(end - start)
 
-    list_for_file = []
-
-    curr_rider = sub_list[2]
-    curr_rider_url = 'http://www.procyclingstats.com/rider/' + curr_rider
-    curr_rider_soup = parse_url(curr_rider_url)
-    curr_rider_scraped = scrape_rider_page(curr_rider_soup)
-    curr_rider_discipline = get_discipline(curr_rider_scraped)
-
-    my_file.write(curr_rider)
-    my_file.write(" --- ")
-
-    for element in curr_rider_discipline:
-        my_file.write(element + " ")
-    my_file.write("\n")
-    my_file.write("\n")
-
-
-my_file.close()
+# TO RUN IN CLI: C:\Python27\python.exe C:\Users\Kevin\Desktop\webscraper\webscraper.py
