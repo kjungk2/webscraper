@@ -1,8 +1,9 @@
-# scrapes procyclingstats.com results page
-# source: https://www.crummy.com/software/BeautifulSoup/bs4/doc/
-# source: automatetheboringstuff ch.11
-# Note: all BeautifulSoup output is unicode. This is why there are 'u' characters
-# in front of output. It's okay
+'''
+Scrapes procyclingstats.com /race and /rider pages
+Docs source: https://www.crummy.com/software/BeautifulSoup/bs4/doc/
+Note: all BeautifulSoup output is unicode. This is why there are 'u' characters
+in front of output.
+'''
 
 import webbrowser, sys
 import requests
@@ -22,74 +23,71 @@ Access to:
 '''
 class Rider(object):
 
-	def __init__(self, raceday, rank, country_code, name, team, time):
-		self.raceday = raceday
-		self.rank = rank
-		self.country_code = country_code
-		self.name = name
-		self.team = team
-		self.time = time
+    def __init__(self, raceday, rank, country_code, name, team, time):
+        self.raceday = raceday
+        self.rank = rank
+        self.country_code = country_code
+        self.name = name
+        self.team = team
+        self.time = time
 
-	def raceday(self):
-		return self.raceday
+    def raceday(self):
+        return self.raceday
 
-	def rank(self):
-		return str(self.rank)
+    def rank(self):
+        return str(self.rank)
 
-	def country_code(self):
-		return self.country_code
+    def country_code(self):
+        return self.country_code
 
-	def name(self):
-		return self.name
+    def name(self):
+        return self.name
 
-	def team(self):
-		return self.team
+    def team(self):
+        return self.team
 
-	def time(self):
-		return self.time
+    def time(self):
+        return self.time
 
 	# Returns any discipline/s over 33% of total points by specialty
-	def discipline(self):
-
-		# parse rider page to get BeautifulSoup object
-		# if PCS' markup changes, then this method will need to change
-		soup = (parse_url(PCS_HOME_URL + '/rider/' + self.name))
-
-		pbs_row_div = soup.find_all("div", style = re.compile("^display: inline-block;"))
+    def discipline(self):
+        # parse rider page to get BeautifulSoup object
+        # if PCS' markup changes, then this method will need to change
+        soup = (parse_url(PCS_HOME_URL + '/rider/' + self.name))
+        pbs_row_div = soup.find_all("div", style = re.compile("^display: inline-block;"))
 
 		# create a discipline dictionary
-		disc_dict = {"One-day-races" : pbs_row_div[0].string,
-		                         "GC" : pbs_row_div[2].string,
-								 "Time-Trialist" : pbs_row_div[4].string,
-								 "Sprinter" : pbs_row_div[6].string
-								 }
+        disc_dict = {"One-day-races" : pbs_row_div[0].string, "GC" : pbs_row_div[2].string, "Time-Trialist" : pbs_row_div[4].string, "Sprinter" : pbs_row_div[6].string}
 
 		# Iterate through the dictionary to find best discipline/s
-		points_sum = 0
-		for points in disc_dict.values():
+        points_sum = 0
+        for points in disc_dict.values():
 			# cast to float so we can get a decimal
-			points_sum += float(points)
+            points_sum += float(points)
 
 		# list that will be returned
-		discipline_list = []
+        discipline_list = []
 
 		# sets a threshhold, otherwise there is not a sufficient sample of data
-		if points_sum < 400:
-			discipline_list = ['Inexperienced']
-			return discipline_list
+        if points_sum < 400:
+            discipline_list = ['Inexperienced']
+            return discipline_list
 
+        max_value = 0
 		# the disc_dict[key] is a NavigableString so cast it to int
-		for key in disc_dict.keys():
-			discipline_ratio = int(disc_dict[key]) / points_sum
-			if discipline_ratio >= 0.33:
-				discipline_list.append(key)
+        for key in disc_dict.keys():
+            discipline_ratio = int(disc_dict[key]) / points_sum
+            if discipline_ratio >= 0.33:
+                discipline_list.append(key)
+            if int(disc_dict[key]) > max_value:
+                max_value = disc_dict[key]
 
 		# if list is empty, rider does not have a value > 33% so return the largest
-		if not discipline_list:
-			#find the maximum value and return that key, used stackflow for this
-			discipline_list.append(max(disc_dict.iteritems(), key=operator.itemgetter(1))[0])
+        if not discipline_list:
+            #find the maximum value and return that key, used stackflow for this
+            discipline_list.append(disc_dict.keys()[disc_dict.values().index(max_value)])
 
-		return discipline_list
+        return discipline_list
 
 
 '''
@@ -149,7 +147,8 @@ def scrape_results_page(soup):
         print "ERROR: Something went wrong with the results page scrape"
 
 
-''' Returns True if 5 elements are of equal length
+'''
+Returns True if 5 elements are of equal length
 To check if html parsing was done evenly and consistently
 '''
 def equal_length(a,b,c,d,e):
@@ -175,22 +174,25 @@ def parse_url(url):
     return BeautifulSoup(data, "html.parser")
 
 
-# This should be the only var to change for any new raceday
-raceday = 'Milano-Sanremo_2017'
+'''Print statements for testing'''
+def main():
+    start = time.time()
+    scraped_results_page = scrape_results_page(parse_url(PCS_HOME_URL + '/race/' + raceday))
 
-start = time.time()
-scraped_results_page = scrape_results_page(parse_url(PCS_HOME_URL + '/race/' + raceday))
+    count = 1
+    for rider_result_list in scraped_results_page:
+        new_rider = Rider(raceday, rider_result_list[0], rider_result_list[1], rider_result_list[2], rider_result_list[3], rider_result_list[4])
 
-count = 1
-for rider_result_list in scraped_results_page:
-    new_rider = Rider(raceday, rider_result_list[0], rider_result_list[1], rider_result_list[2], rider_result_list[3], rider_result_list[4])
+        print str(new_rider.name) + str(new_rider.discipline())
+        count += 1
 
-    print str(new_rider.name) + " -- " + str(new_rider.discipline())
-    count += 1
+    end = time.time()
+    print '\nParsed ' + str(count) + ' pages.'
+    print '\n RunTime = ' + str(end - start)
+    print raceday.replace('_', ' ')
 
-end = time.time()
-print '\nParsed' + str(count) + 'pages.'
-print '\n RunTime = '
-print(end - start)
 
 # TO RUN IN CLI: C:\Python27\python.exe C:\Users\Kevin\Desktop\webscraper\webscraper.py
+# This should be the only var to change for any new raceday
+raceday = 'Vuelta_al_Pais_Vasco_2017_Stage_6'
+main()
