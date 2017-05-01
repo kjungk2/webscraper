@@ -174,22 +174,43 @@ def parse_url(url):
     return BeautifulSoup(data, "html.parser")
 
 
-'''Print statements for testing'''
+'''
+Write info to file
+Includes time and counts printed to terminal
+'''
 def main():
+    print '\nWebscraping for ' + raceday.replace('_', ' ') + ' has started...\n'
     start = time.time()
     scraped_results_page = scrape_results_page(parse_url(PCS_HOME_URL + '/race/' + raceday))
+
+    myfile = open('C:\Users\Kevin\Desktop\webscraper\\race_data.csv', 'w')
+    myfile.write('raceday,rank,country_code,name,team,time,discipline\n')
 
     count = 1
     for rider_result_list in scraped_results_page:
         new_rider = Rider(raceday, rider_result_list[0], rider_result_list[1], rider_result_list[2], rider_result_list[3], rider_result_list[4])
 
-        print str(new_rider.name) + str(new_rider.discipline())
+        #print str(new_rider.name) + str(new_rider.discipline())
+        myfile.write(new_rider.raceday)
+        myfile.write(',')
+        myfile.write(new_rider.rank)
+        myfile.write(',')
+        myfile.write(new_rider.country_code)
+        myfile.write(',')
+        myfile.write(new_rider.name)
+        myfile.write(',')
+        myfile.write(new_rider.team)
+        myfile.write(',')
+        myfile.write(new_rider.time)
+        myfile.write(',')
+        myfile.write(str(new_rider.discipline()))
+        myfile.write('\n')
         count += 1
 
+    myfile.close()
     end = time.time()
-    print '\nParsed ' + str(count) + ' pages.'
-    print '\n RunTime = ' + str(end - start)
-    print raceday.replace('_', ' ')
+    print '\n' + str(count) + ' records | ' + str(end - start) + ' seconds\n'
+    print raceday.replace('_', ' ') + ' results have bee written to file.'
 
 
 # TO RUN IN CLI: C:\Python27\python.exe C:\Users\Kevin\Desktop\webscraper\webscraper.py
