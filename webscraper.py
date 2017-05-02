@@ -171,55 +171,67 @@ def parse_url(url):
     data = res.text
     return BeautifulSoup(data, "html.parser")
 
+#TODO: cofidis team name has ',' -- needs fixed b/c CSV gets corrupted otherwise
 def write_to_csv():
     '''
     Write info to file
     Includes time and counts printed to terminal
     '''
-    print '\nWebscraping for ' + raceday.replace('_', ' ') + ' has started...\n'
-    start = time.time()
-    scraped_results_page = scrape_results_page(parse_url(PCS_HOME_URL + '/race/' + raceday))
+    # Prompt to write to CSV
+    prompt = raw_input("\nInitiate the webscrape (y/n)? ")
+    if prompt == 'y':
 
-    myfile = open(CSV_PATH + '\\race_data.csv', 'w')
+        print '\nWebscraping for ' + raceday.replace('_', ' ') + ' has started...\n'
+        start = time.time()
+        scraped_results_page = scrape_results_page(parse_url(PCS_HOME_URL + '/race/' + raceday))
 
-    count = 1
-    for rider_result_list in scraped_results_page:
-        new_rider = Rider(raceday, rider_result_list[0], rider_result_list[1], rider_result_list[2], rider_result_list[3], rider_result_list[4])
+        myfile = open(CSV_PATH + '\\race_data.csv', 'w')
 
-        myfile.write(new_rider.raceday)
-        myfile.write(',')
-        myfile.write(new_rider.rank)
-        myfile.write(',')
-        myfile.write(new_rider.country_code)
-        myfile.write(',')
-        myfile.write(new_rider.name)
-        myfile.write(',')
-        myfile.write(new_rider.team)
-        myfile.write(',')
-        myfile.write(new_rider.time)
-        myfile.write(',')
-        myfile.write(str(new_rider.discipline()))
-        myfile.write('\n')
-        count += 1
+        count = 1
+        for rider_result_list in scraped_results_page:
+            new_rider = Rider(raceday, rider_result_list[0], rider_result_list[1], rider_result_list[2], rider_result_list[3], rider_result_list[4])
 
-    myfile.close()
-    end = time.time()
-    print '\n' + str(count) + ' records | ' + str(end - start) + ' seconds\n'
-    print raceday.replace('_', ' ') + ' results have been written to file.'
+            myfile.write(new_rider.raceday)
+            myfile.write(',')
+            myfile.write(new_rider.rank)
+            myfile.write(',')
+            myfile.write(new_rider.country_code)
+            myfile.write(',')
+            myfile.write(new_rider.name)
+            myfile.write(',')
+            myfile.write(new_rider.team)
+            myfile.write(',')
+            myfile.write(new_rider.time)
+            myfile.write(',')
+            myfile.write(str(new_rider.discipline()))
+            myfile.write('\n')
+            count += 1
+
+        myfile.close()
+        end = time.time()
+        print '\n' + str(count) + ' records | ' + str(end - start) + ' seconds\n'
+        print raceday.replace('_', ' ') + ' results have been written to file.'
 
 def load_csv_to_table():
+    ''' Puts the CSV data into the table'''
+    # Prompt to write to CSV
+    prompt = raw_input("\nLoad CSV to table (y/n)? ")
+    if prompt == 'y':
 
-    db = MySQLdb.connect(host='localhost', user='race_data', passwd='peloton', db='race_data')
-    cursor = db.cursor()
-    csv_data = csv.reader(file(CSV_PATH + '\\race_data.csv'))
+        # Open database connection
+        db = MySQLdb.connect(host='localhost', user='race_data', passwd='peloton', db='race_data')
+        cursor = db.cursor()
 
-    for row in csv_data:
+        csv_data = csv.reader(file(CSV_PATH + '\\race_data.csv'))
 
-        sql = 'INSERT INTO testdb (NAME, RANK, RACEDAY, TIME) VALUES(%s, %s, %s, %s)'
-        cursor.execute(sql, (row[3], row[1], row[0], row[5]))
+        for row in csv_data:
 
-    db.commit()
-    db.close()
+            #raceday, rank, country_code, name, team, time, discipline
+            insert_sql = 'INSERT INTO testdb (RACEDAY, RANK, COUNTRY, NAME, TEAM, TIME, DISCIPLINE) VALUES(%s, %s, %s, %s, %s, %s, %s)'
+            cursor.execute(insert_sql, (row[0], row[1], row[2], row[3], row[4], row[5], row[6]))
+
+        db.commit()
+        db.close()
 
 
 # TO RUN IN CLI: C:\Python27\python.exe C:\Users\Kevin\Desktop\webscraper\webscraper.py
