@@ -1,6 +1,7 @@
 '''
 Scrapes procyclingstats.com /race and /rider pages
 Docs source: https://www.crummy.com/software/BeautifulSoup/bs4/doc/
+MySQL source: https://www.tutorialspoint.com/python/python_database_access.htm
 Note: all BeautifulSoup output is unicode. This is why there are 'u' characters
 in front of output.
 '''
@@ -12,17 +13,19 @@ from bs4 import BeautifulSoup
 import re
 import operator
 import time
+import csv
+import MySQLdb
 
 #CONSTANTS
 PCS_HOME_URL = 'http://www.procyclingstats.com'
+CSV_PATH = 'C:\Users\Kevin\Desktop\webscraper'
 
-'''
-Instantiates a rider object.
-Access to:
-  raceday, rank, country_code, name, team, time, country_name, discipline
-'''
 class Rider(object):
-
+    '''
+    Instantiates a rider object.
+    Access to:
+      raceday, rank, country_code, name, team, time, country_name, discipline
+    '''
     def __init__(self, raceday, rank, country_code, name, team, time):
         self.raceday = raceday
         self.rank = rank
@@ -89,14 +92,12 @@ class Rider(object):
 
         return discipline_list
 
-
-'''
-Returns a list of lists: [0]=rank, [1]=country, [2]=name, [3]=team, [4]=time
-Requires a BeautifulSoup object, use parse_url function
-if PCS' markup changes, then this function will need to change
-'''
 def scrape_results_page(soup):
-
+    '''
+    Returns a list of lists: [0]=rank, [1]=country, [2]=name, [3]=team, [4]=time
+    Requires a BeautifulSoup object, use parse_url function
+    if PCS' markup changes, then this function will need to change
+    '''
     # empty list to populate each rider's details
     rider_rank = []
     rider_country = []
@@ -146,21 +147,18 @@ def scrape_results_page(soup):
     else:
         print "ERROR: Something went wrong with the results page scrape"
 
-
-'''
-Returns True if 5 elements are of equal length
-To check if html parsing was done evenly and consistently
-'''
 def equal_length(a,b,c,d,e):
+    '''
+    Returns True if 5 elements are of equal length
+    To check if html parsing was done evenly and consistently
+    '''
     return len(a) > 0 and len(a) == len(b) == len(c) == len(d) == len(e)
 
-
-'''
-Returns BeautifulSoup object
-Requires a url of type string
-'''
 def parse_url(url):
-
+    '''
+    Returns BeautifulSoup object
+    Requires a url of type string
+    '''
     res = requests.get(url)
 
     # make sure request.get is successful
@@ -173,24 +171,21 @@ def parse_url(url):
     data = res.text
     return BeautifulSoup(data, "html.parser")
 
-
-'''
-Write info to file
-Includes time and counts printed to terminal
-'''
-def main():
+def write_to_csv():
+    '''
+    Write info to file
+    Includes time and counts printed to terminal
+    '''
     print '\nWebscraping for ' + raceday.replace('_', ' ') + ' has started...\n'
     start = time.time()
     scraped_results_page = scrape_results_page(parse_url(PCS_HOME_URL + '/race/' + raceday))
 
-    myfile = open('C:\Users\Kevin\Desktop\webscraper\\race_data.csv', 'w')
-    myfile.write('raceday,rank,country_code,name,team,time,discipline\n')
+    myfile = open(CSV_PATH + '\\race_data.csv', 'w')
 
     count = 1
     for rider_result_list in scraped_results_page:
         new_rider = Rider(raceday, rider_result_list[0], rider_result_list[1], rider_result_list[2], rider_result_list[3], rider_result_list[4])
 
-        #print str(new_rider.name) + str(new_rider.discipline())
         myfile.write(new_rider.raceday)
         myfile.write(',')
         myfile.write(new_rider.rank)
@@ -210,10 +205,25 @@ def main():
     myfile.close()
     end = time.time()
     print '\n' + str(count) + ' records | ' + str(end - start) + ' seconds\n'
-    print raceday.replace('_', ' ') + ' results have bee written to file.'
+    print raceday.replace('_', ' ') + ' results have been written to file.'
+
+def load_csv_to_table():
+
+    db = MySQLdb.connect(host='localhost', user='race_data', passwd='peloton', db='race_data')
+    cursor = db.cursor()
+    csv_data = csv.reader(file(CSV_PATH + '\\race_data.csv'))
+
+    for row in csv_data:
+
+        sql = 'INSERT INTO testdb (NAME, RANK, RACEDAY, TIME) VALUES(%s, %s, %s, %s)'
+        cursor.execute(sql, (row[3], row[1], row[0], row[5]))
+
+    db.commit()
+    db.close()
 
 
 # TO RUN IN CLI: C:\Python27\python.exe C:\Users\Kevin\Desktop\webscraper\webscraper.py
 # This should be the only var to change for any new raceday
 raceday = 'Vuelta_al_Pais_Vasco_2017_Stage_6'
-main()
+write_to_csv()
+load_csv_to_table()
