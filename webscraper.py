@@ -15,6 +15,7 @@ import operator
 import time
 import csv
 import MySQLdb
+import helpers
 
 #CONSTANTS
 PCS_HOME_URL = 'http://www.procyclingstats.com'
@@ -26,13 +27,14 @@ class Rider(object):
     Access to:
       raceday, rank, country_code, name, team, time, country_name, discipline
     '''
-    def __init__(self, raceday, rank, country_code, name, team, time):
+    def __init__(self, raceday, rank, country_code, name, team, pcs_time, race_winning_time):
         self.raceday = raceday
         self.rank = rank
         self.country_code = country_code
         self.name = name
         self.team = team
-        self.time = time
+        self.pcs_time = pcs_time
+        self.race_winning_time = race_winning_time
 
     def raceday(self):
         return self.raceday
@@ -49,8 +51,29 @@ class Rider(object):
     def team(self):
         return self.team
 
-    def time(self):
-        return self.time
+    def pcs_time(self):
+        return self.pcs_time
+
+    def race_winning_time(self):
+        return self.race_winning_time
+
+    def total_time(self):
+        # get pcs_time in [HH, MM, SS] format
+        hms_formatted_pcs_time = helpers.hms_formatter(self.pcs_time)
+
+        try:
+            if int(self.rank) == 1:
+                # add zero to it to get to desired format
+                return helpers.hms_adder(hms_formatted_pcs_time, [0,0,0])
+            else:
+                hms_formatted_race_winning_time = helpers.hms_formatter(self.race_winning_time)
+                return helpers.hms_adder(hms_formatted_pcs_time, hms_formatted_race_winning_time)
+        except ValueError:
+            #TODO: What if rider has no pcs_time? aka DNS, DNF, DSQ. for now, return '999999'
+            return '999999'
+
+    def get_country_name(self):
+        return helpers.get_country_name(self.country_code)
 
 	# Returns any discipline/s over 33% of total points by specialty
     def discipline(self):
@@ -171,7 +194,6 @@ def parse_url(url):
     data = res.text
     return BeautifulSoup(data, "html.parser")
 
-#TODO: cofidis team name has ',' -- needs fixed b/c CSV gets corrupted otherwise
 def write_to_csv():
     '''
     Write info to file
@@ -188,8 +210,14 @@ def write_to_csv():
         myfile = open(CSV_PATH + '\\race_data.csv', 'w')
 
         count = 1
+
+        #get best time of race for time calculations
+        race_winning_time = scraped_results_page[0][4]
+
         for rider_result_list in scraped_results_page:
-            new_rider = Rider(raceday, rider_result_list[0], rider_result_list[1], rider_result_list[2], rider_result_list[3], rider_result_list[4])
+
+            # raceday, rank, country_code, name, team, pcs_time, winning_time
+            new_rider = Rider(raceday, rider_result_list[0], rider_result_list[1], rider_result_list[2], rider_result_list[3], rider_result_list[4], race_winning_time)
 
             myfile.write(new_rider.raceday)
             myfile.write(',')
@@ -201,9 +229,13 @@ def write_to_csv():
             myfile.write(',')
             myfile.write(new_rider.team)
             myfile.write(',')
-            myfile.write(new_rider.time)
+            myfile.write(new_rider.pcs_time)
+            myfile.write(',')
+            myfile.write(str(new_rider.total_time()))
             myfile.write(',')
             myfile.write(str(new_rider.discipline()))
+            myfile.write('\n')
+            myfile.write(new_rider.get_country_name())
             myfile.write('\n')
             count += 1
 
@@ -215,7 +247,7 @@ def write_to_csv():
 def load_csv_to_table():
     ''' Puts the CSV data into the table'''
     # Prompt to write to CSV
-    prompt = raw_input("\nLoad CSV to table (y/n)? ")
+    prompt = raw_input("\nLoad CSV to database table (y/n)? ")
     if prompt == 'y':
 
         # Open database connection
@@ -226,9 +258,9 @@ def load_csv_to_table():
 
         for row in csv_data:
 
-            #raceday, rank, country_code, name, team, time, discipline
-            insert_sql = 'INSERT INTO testdb (RACEDAY, RANK, COUNTRY, NAME, TEAM, TIME, DISCIPLINE) VALUES(%s, %s, %s, %s, %s, %s, %s)'
-            cursor.execute(insert_sql, (row[0], row[1], row[2], row[3], row[4], row[5], row[6]))
+            #raceday, rank, country_code, name, team, pcs_time, total time, discipline
+            insert_sql = 'INSERT INTO testdb (RACEDAY, RANK, COUNTRY, NAME, TEAM, PCS_TIME, TOT_TIME, DISCIPLINE) VALUES(%s, %s, %s, %s, %s, %s, %s, %s)'
+            cursor.execute(insert_sql, (row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7]))
 
         db.commit()
         db.close()
@@ -236,6 +268,6 @@ def load_csv_to_table():
 
 # TO RUN IN CLI: C:\Python27\python.exe C:\Users\Kevin\Desktop\webscraper\webscraper.py
 # This should be the only var to change for any new raceday
-raceday = 'Vuelta_al_Pais_Vasco_2017_Stage_6'
+raceday = 'Santos_Tour_Down_Under_2017_Stage_6'
 write_to_csv()
 load_csv_to_table()
