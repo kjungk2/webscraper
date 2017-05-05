@@ -30,7 +30,8 @@ def hms_formatter(time):
         seconds = time[first_colon_ix+1:]
 
     else:
-        return "Err: given parameter is in unexpected format. PARAM type: " + str(type(time))
+        # Given parameter is in unexpected format; raise a ValueError to trigger the except clause
+        raise ValueError
 
     hms_list.append(hours)
     hms_list.append(minutes)
@@ -74,6 +75,10 @@ def hms_adder(winning_time, riders_time_diff):
 
     return str(final_hours) + str(final_minutes) + str(final_seconds)
 
+'''
+param: 2-letter country code
+returns: country name
+'''
 def get_country_name(country_code):
 	country_code_dict = {'gw':'Guinea-Bissau',
 	'gu':'Guam',

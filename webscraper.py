@@ -19,7 +19,7 @@ import helpers
 
 #CONSTANTS
 PCS_HOME_URL = 'http://www.procyclingstats.com'
-CSV_PATH = 'C:\Users\Kevin\Desktop\webscraper'
+TXT_PATH = 'C:\Users\Kevin\Desktop\webscraper'
 
 class Rider(object):
     '''
@@ -54,23 +54,33 @@ class Rider(object):
     def pcs_time(self):
         return self.pcs_time
 
+    def get_formatted_pcs_time(self):
+        try:
+            hms_formatted_pcs_time = helpers.hms_formatter(self.pcs_time)
+            # add zero to it to get to desired format
+            return helpers.hms_adder(hms_formatted_pcs_time, [0,0,0])
+        except ValueError:
+            return self.pcs_time
+
     def race_winning_time(self):
         return self.race_winning_time
 
     def total_time(self):
-        # get pcs_time in [HH, MM, SS] format
-        hms_formatted_pcs_time = helpers.hms_formatter(self.pcs_time)
-
         try:
+            # get pcs_time in [HH, MM, SS] format
+            hms_formatted_pcs_time = helpers.hms_formatter(self.pcs_time)
+
             if int(self.rank) == 1:
                 # add zero to it to get to desired format
                 return helpers.hms_adder(hms_formatted_pcs_time, [0,0,0])
             else:
                 hms_formatted_race_winning_time = helpers.hms_formatter(self.race_winning_time)
                 return helpers.hms_adder(hms_formatted_pcs_time, hms_formatted_race_winning_time)
+
+        # value passed in for pcs_time or rank isn't valid so return 595959
         except ValueError:
             #TODO: What if rider has no pcs_time? aka DNS, DNF, DSQ. for now, return '999999'
-            return '999999'
+            return '595959'
 
     def get_country_name(self):
         return helpers.get_country_name(self.country_code)
@@ -96,7 +106,7 @@ class Rider(object):
 
 		# sets a threshhold, otherwise there is not a sufficient sample of data
         if points_sum < 400:
-            discipline_list = ['Inexperienced']
+            discipline_list = ['Inexperienced', 'None', 'None']
             return discipline_list
 
         max_value = 0
@@ -112,6 +122,13 @@ class Rider(object):
         if not discipline_list:
             #find the maximum value and return that key, used stackflow for this
             discipline_list.append(disc_dict.keys()[disc_dict.values().index(max_value)])
+
+        # pad the list with null values to make the length 3
+        if len(discipline_list) == 1:
+            discipline_list.append('None')
+            discipline_list.append('None')
+        if len(discipline_list) == 2:
+            discipline_list.append('None')
 
         return discipline_list
 
@@ -194,12 +211,12 @@ def parse_url(url):
     data = res.text
     return BeautifulSoup(data, "html.parser")
 
-def write_to_csv():
+def write_to_file():
     '''
     Write info to file
     Includes time and counts printed to terminal
     '''
-    # Prompt to write to CSV
+    # Prompt to write to file
     prompt = raw_input("\nInitiate the webscrape (y/n)? ")
     if prompt == 'y':
 
@@ -207,7 +224,7 @@ def write_to_csv():
         start = time.time()
         scraped_results_page = scrape_results_page(parse_url(PCS_HOME_URL + '/race/' + raceday))
 
-        myfile = open(CSV_PATH + '\\race_data.csv', 'w')
+        myfile = open(TXT_PATH + '\\race_data.txt', 'w')
 
         count = 1
 
@@ -220,22 +237,26 @@ def write_to_csv():
             new_rider = Rider(raceday, rider_result_list[0], rider_result_list[1], rider_result_list[2], rider_result_list[3], rider_result_list[4], race_winning_time)
 
             myfile.write(new_rider.raceday)
-            myfile.write(',')
+            myfile.write(':')
             myfile.write(new_rider.rank)
-            myfile.write(',')
+            myfile.write(':')
             myfile.write(new_rider.country_code)
-            myfile.write(',')
-            myfile.write(new_rider.name)
-            myfile.write(',')
-            myfile.write(new_rider.team)
-            myfile.write(',')
-            myfile.write(new_rider.pcs_time)
-            myfile.write(',')
-            myfile.write(str(new_rider.total_time()))
-            myfile.write(',')
-            myfile.write(str(new_rider.discipline()))
-            myfile.write('\n')
+            myfile.write(':')
             myfile.write(new_rider.get_country_name())
+            myfile.write(':')
+            myfile.write(new_rider.name)
+            myfile.write(':')
+            myfile.write(new_rider.team)
+            myfile.write(':')
+            myfile.write(new_rider.get_formatted_pcs_time())
+            myfile.write(':')
+            myfile.write(str(new_rider.total_time()))
+            myfile.write(':')
+            myfile.write(str(new_rider.discipline()[0]))
+            myfile.write(':')
+            myfile.write(str(new_rider.discipline()[1]))
+            myfile.write(':')
+            myfile.write(str(new_rider.discipline()[2]))
             myfile.write('\n')
             count += 1
 
@@ -244,23 +265,22 @@ def write_to_csv():
         print '\n' + str(count) + ' records | ' + str(end - start) + ' seconds\n'
         print raceday.replace('_', ' ') + ' results have been written to file.'
 
-def load_csv_to_table():
-    ''' Puts the CSV data into the table'''
-    # Prompt to write to CSV
-    prompt = raw_input("\nLoad CSV to database table (y/n)? ")
+def load_file_to_table():
+    ''' Puts the data into the table'''
+    # Prompt to write to file
+    prompt = raw_input("\nLoad file to database table (y/n)? ")
     if prompt == 'y':
 
         # Open database connection
         db = MySQLdb.connect(host='localhost', user='race_data', passwd='peloton', db='race_data')
         cursor = db.cursor()
 
-        csv_data = csv.reader(file(CSV_PATH + '\\race_data.csv'))
-
-        for row in csv_data:
-
-            #raceday, rank, country_code, name, team, pcs_time, total time, discipline
-            insert_sql = 'INSERT INTO testdb (RACEDAY, RANK, COUNTRY, NAME, TEAM, PCS_TIME, TOT_TIME, DISCIPLINE) VALUES(%s, %s, %s, %s, %s, %s, %s, %s)'
-            cursor.execute(insert_sql, (row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7]))
+        with open(TXT_PATH + '\\race_data.txt') as txt_data:
+            for row in txt_data:
+                row = row.split(':')
+                #raceday, rank, country_code, name, team, pcs_time, total time, discipline
+                insert_sql = 'INSERT INTO testdb (RACEDAY, RANK, COUNTRY_CODE, COUNTRY, NAME, TEAM, PCS_TIME, TOT_TIME, DISCIPLINE_1, DISCIPLINE_2, DISCIPLINE_3) VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)'
+                cursor.execute(insert_sql, (row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9], row[10]))
 
         db.commit()
         db.close()
@@ -268,6 +288,6 @@ def load_csv_to_table():
 
 # TO RUN IN CLI: C:\Python27\python.exe C:\Users\Kevin\Desktop\webscraper\webscraper.py
 # This should be the only var to change for any new raceday
-raceday = 'Santos_Tour_Down_Under_2017_Stage_6'
-write_to_csv()
-load_csv_to_table()
+raceday = 'Paris-Nice_2017_Stage_8'
+write_to_file()
+load_file_to_table()
