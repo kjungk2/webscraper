@@ -40,7 +40,7 @@ class Rider(object):
         return self.raceday
 
     def rank(self):
-        return str(self.rank)
+        return self.rank
 
     def country_code(self):
         return self.country_code
@@ -53,6 +53,15 @@ class Rider(object):
 
     def pcs_time(self):
         return self.pcs_time
+
+    # need get_rank to return an integer so we can sort it
+    # because rank may be 'DNF' or 'NQ', etc, we need to try to turn it to integer, otherwise, return 0
+    def get_rank(self):
+        try:
+            result = int(self.rank)
+            return result
+        except:
+            return 0
 
     def get_formatted_pcs_time(self):
         try:
@@ -238,7 +247,7 @@ def write_to_file():
 
             myfile.write(new_rider.raceday)
             myfile.write(':')
-            myfile.write(new_rider.rank)
+            myfile.write(str(new_rider.get_rank()))
             myfile.write(':')
             myfile.write(new_rider.country_code)
             myfile.write(':')
@@ -262,7 +271,7 @@ def write_to_file():
 
         myfile.close()
         end = time.time()
-        print '\n' + str(count) + ' records | ' + str(end - start) + ' seconds\n'
+        print '\n' + str(count) + ' records | ' + str((end - start)/60) + ' minutes\n'
         print raceday.replace('_', ' ') + ' results have been written to file.'
 
 def load_file_to_table():
@@ -272,7 +281,7 @@ def load_file_to_table():
     if prompt == 'y':
 
         # Open database connection
-        db = MySQLdb.connect(host='localhost', user='race_data', passwd='peloton', db='race_data')
+        db = MySQLdb.connect(host='localhost', user='pelotonbook', passwd='peloton', db='pelotonbook')
         cursor = db.cursor()
 
         with open(TXT_PATH + '\\race_data.txt') as txt_data:
@@ -288,6 +297,6 @@ def load_file_to_table():
 
 # TO RUN IN CLI: C:\Python27\python.exe C:\Users\Kevin\Desktop\webscraper\webscraper.py
 # This should be the only var to change for any new raceday
-raceday = 'Paris-Nice_2017_Stage_8'
+raceday = 'Giro_dItalia_2017_Stage_16'
 write_to_file()
 load_file_to_table()

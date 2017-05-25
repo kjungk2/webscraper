@@ -1,151 +1,178 @@
-Paris-Nice_2017_Stage_8:1:es:Spain:David_de_la_Cruz:Quick_Step_Floors_2017:24853:24853:GC:None:None
-Paris-Nice_2017_Stage_8:2:es:Spain:Alberto_Contador:Trek_Segafredo_2017:00000:24853:GC:None:None
-Paris-Nice_2017_Stage_8:3:es:Spain:Marc_Soler:Movistar_Team_2017:00005:24858:GC:None:None
-Paris-Nice_2017_Stage_8:4:it:Italy:Sonny_Colbrelli:Bahrain_Merida_Pro_Cycling_Team_2017:00021:24914:One-day-races:Sprinter:None
-Paris-Nice_2017_Stage_8:5:fr:France:Julian_Alaphilippe:Quick_Step_Floors_2017:00021:24914:One-day-races:None:None
-Paris-Nice_2017_Stage_8:6:au:Australia:Michael_Matthews:Team_Sunweb_2017:00021:24914:One-day-races:Sprinter:None
-Paris-Nice_2017_Stage_8:7:it:Italy:Diego_Ulissi:UAE_Team_Emirates_2017:00021:24914:One-day-races:None:None
-Paris-Nice_2017_Stage_8:8:es:Spain:Gorka_Izagirre:Movistar_Team_2017:00021:24914:GC:None:None
-Paris-Nice_2017_Stage_8:9:fr:France:Arnold_Jeannesson:Fortuneo_Vital_Concept_2017:00021:24914:GC:None:None
-Paris-Nice_2017_Stage_8:10:fr:France:Lilian_Calmejane:Direct_Energie_2017:00021:24914:GC:None:None
-Paris-Nice_2017_Stage_8:11:fr:France:nicolas_Edet:Cofidis,_Solutions_Credits_2017:00021:24914:GC:None:None
-Paris-Nice_2017_Stage_8:12:co:Colombia:Sergio_Luis_Henao:Team_Sky_2017:00021:24914:GC:None:None
-Paris-Nice_2017_Stage_8:13:ie:Ireland:Daniel_Martin_1:Quick_Step_Floors_2017:00021:24914:GC:One-day-races:None
-Paris-Nice_2017_Stage_8:14:ru:Russian Federation:Ilnur_Zakarin:Team_Katusha_Alpecin_2017:00021:24914:GC:None:None
-Paris-Nice_2017_Stage_8:15:gb:United Kingdom:Simon_Yates:ORICA_Scott_2017:00021:24914:GC:None:None
-Paris-Nice_2017_Stage_8:16:dk:Denmark:Jakob_Fuglsang:Astana_Pro_Team_2017:00021:24914:GC:None:None
-Paris-Nice_2017_Stage_8:17:fr:France:Warren_Barguil:Team_Sunweb_2017:00021:24914:GC:None:None
-Paris-Nice_2017_Stage_8:18:au:Australia:Richie_Porte:BMC_Racing_Team_2017:00021:24914:GC:None:None
-Paris-Nice_2017_Stage_8:19:es:Spain:Ion_Izagirre:Bahrain_Merida_Pro_Cycling_Team_2017:00021:24914:GC:None:None
-Paris-Nice_2017_Stage_8:20:co:Colombia:Jarlinson_Pantano:Trek_Segafredo_2017:00021:24914:GC:None:None
-Paris-Nice_2017_Stage_8:21:it:Italy:Simone_Petilli:UAE_Team_Emirates_2017:00102:24955:One-day-races:None:None
-Paris-Nice_2017_Stage_8:22:fr:France:Sylvain_Chavanel:Direct_Energie_2017:00114:25007:GC:None:None
-Paris-Nice_2017_Stage_8:23:nl:Netherlands:Sam_Oomen:Team_Sunweb_2017:00114:25007:GC:None:None
-Paris-Nice_2017_Stage_8:24:au:Australia:Rory_Sutherland:Movistar_Team_2017:00114:25007:GC:None:None
-Paris-Nice_2017_Stage_8:25:it:Italy:Alessandro_De_Marchi:BMC_Racing_Team_2017:00129:25022:One-day-races:None:None
-Paris-Nice_2017_Stage_8:26:fr:France:Quentin_Pacher:Delko_Marseille_Provence_KTM_2017:00230:25123:Inexperienced:None:None
-Paris-Nice_2017_Stage_8:27:pt:Portugal:Jose_Mendes:Bora_Hansgrohe_2017:00230:25123:GC:None:None
-Paris-Nice_2017_Stage_8:28:fr:France:Julien_El_Fares:Delko_Marseille_Provence_KTM_2017:00233:25126:GC:None:None
-Paris-Nice_2017_Stage_8:29:ca:Canada:Michael_Woods:Cannondale_Drapac_Pro_Cycling_Team_2017:00254:25147:GC:One-day-races:None
-Paris-Nice_2017_Stage_8:30:be:Belgium:Serge_Pauwels:Dimension_Data_2017:00254:25147:GC:None:None
-Paris-Nice_2017_Stage_8:31:fr:France:Mikael_Cherel:AG2R_La_Mondiale_2017:00254:25147:GC:None:None
-Paris-Nice_2017_Stage_8:32:ch:Switzerland:Mathias_Frank:AG2R_La_Mondiale_2017:00254:25147:GC:None:None
-Paris-Nice_2017_Stage_8:33:es:Spain:Jose_Herrada:Movistar_Team_2017:00254:25147:GC:None:None
-Paris-Nice_2017_Stage_8:34:be:Belgium:Oliver_naesen:AG2R_La_Mondiale_2017:00325:25218:One-day-races:None:None
-Paris-Nice_2017_Stage_8:35:fr:France:Romain_Hardy:Fortuneo_Vital_Concept_2017:00325:25218:One-day-races:None:None
-Paris-Nice_2017_Stage_8:36:ar:Argentina:Eduardo_Sepulveda:Fortuneo_Vital_Concept_2017:00325:25218:GC:None:None
-Paris-Nice_2017_Stage_8:37:fr:France:Pierre_Latour:AG2R_La_Mondiale_2017:00325:25218:GC:None:None
-Paris-Nice_2017_Stage_8:38:fr:France:Cyril_Gautier:AG2R_La_Mondiale_2017:00325:25218:One-day-races:None:None
-Paris-Nice_2017_Stage_8:39:de:Germany:Simon_Geschke:Team_Sunweb_2017:00325:25218:One-day-races:None:None
-Paris-Nice_2017_Stage_8:40:ch:Switzerland:Danilo_Wyss:BMC_Racing_Team_2017:00325:25218:Time-Trialist:None:None
-Paris-Nice_2017_Stage_8:41:et:Ethiopia:Tsgabu_Gebremaryam_Grmay:Bahrain_Merida_Pro_Cycling_Team_2017:00325:25218:GC:None:None
-Paris-Nice_2017_Stage_8:42:es:Spain:Mikel_nieve:Team_Sky_2017:00325:25218:GC:None:None
-Paris-Nice_2017_Stage_8:43:kz:Kazakhstan:Aleksey_Lutsenko:Astana_Pro_Team_2017:00325:25218:One-day-races:None:None
-Paris-Nice_2017_Stage_8:44:be:Belgium:Thomas_De_Gendt:Lotto_Soudal_2017:00325:25218:GC:None:None
-Paris-Nice_2017_Stage_8:45:gb:United Kingdom:Ben_Swift:UAE_Team_Emirates_2017:00325:25218:Sprinter:None:None
-Paris-Nice_2017_Stage_8:46:fr:France:Rudy_Molard:FDJ_2017:00325:25218:GC:One-day-races:None
-Paris-Nice_2017_Stage_8:47:be:Belgium:Philippe_Gilbert:Quick_Step_Floors_2017:00325:25218:One-day-races:None:None
-Paris-Nice_2017_Stage_8:48:it:Italy:Mauro_Finetto:Delko_Marseille_Provence_KTM_2017:00325:25218:One-day-races:None:None
-Paris-Nice_2017_Stage_8:49:au:Australia:Simon_Gerrans:ORICA_Scott_2017:00325:25218:One-day-races:None:None
-Paris-Nice_2017_Stage_8:50:at:Austria:Patrick_Konrad:Bora_Hansgrohe_2017:00325:25218:GC:None:None
-Paris-Nice_2017_Stage_8:51:si:Slovenia:Jan_Polanc:UAE_Team_Emirates_2017:00325:25218:GC:One-day-races:None
-Paris-Nice_2017_Stage_8:52:dk:Denmark:Michael_Valgren_Andersen:Astana_Pro_Team_2017:00325:25218:GC:One-day-races:None
-Paris-Nice_2017_Stage_8:53:cz:Czech Republic:Jan_Barta:Bora_Hansgrohe_2017:00325:25218:Time-Trialist:GC:None
-Paris-Nice_2017_Stage_8:54:fr:France:Tony_Gallopin:Lotto_Soudal_2017:00325:25218:One-day-races:None:None
-Paris-Nice_2017_Stage_8:55:ie:Ireland:nicolas_Roche:BMC_Racing_Team_2017:00325:25218:GC:None:None
-Paris-Nice_2017_Stage_8:56:es:Spain:Imanol_Erviti:Movistar_Team_2017:00325:25218:Time-Trialist:None:None
-Paris-Nice_2017_Stage_8:57:es:Spain:Victor_De_La_Parte:Movistar_Team_2017:00325:25218:GC:None:None
-Paris-Nice_2017_Stage_8:58:es:Spain:David_Lopez:Team_Sky_2017:00325:25218:GC:None:None
-Paris-Nice_2017_Stage_8:59:pl:Poland:Michal_Golas:Team_Sky_2017:00325:25218:One-day-races:None:None
-Paris-Nice_2017_Stage_8:60:ie:Ireland:Philip_Deignan:Team_Sky_2017:00325:25218:GC:None:None
-Paris-Nice_2017_Stage_8:61:be:Belgium:Jens_Keukeleire:ORICA_Scott_2017:00325:25218:One-day-races:Sprinter:None
-Paris-Nice_2017_Stage_8:62:ee:Estonia:Tanel_Kangert:Astana_Pro_Team_2017:00325:25218:GC:None:None
-Paris-Nice_2017_Stage_8:63:fr:France:Amael_Moinard:BMC_Racing_Team_2017:00325:25218:GC:None:None
-Paris-Nice_2017_Stage_8:64:fr:France:Axel_Domont:AG2R_La_Mondiale_2017:00325:25218:Inexperienced:None:None
-Paris-Nice_2017_Stage_8:65:it:Italy:Davide_Villella:Cannondale_Drapac_Pro_Cycling_Team_2017:00325:25218:One-day-races:None:None
-Paris-Nice_2017_Stage_8:66:co:Colombia:Sebastian_Henao:Team_Sky_2017:00325:25218:GC:None:None
-Paris-Nice_2017_Stage_8:67:de:Germany:Andre_Greipel:Lotto_Soudal_2017:00847:25740:Sprinter:None:None
-Paris-Nice_2017_Stage_8:68:nl:Netherlands:Tom_Jelte_Slagter:Cannondale_Drapac_Pro_Cycling_Team_2017:00847:25740:One-day-races:None:None
-Paris-Nice_2017_Stage_8:69:it:Italy:Kristian_Sbaragli:Dimension_Data_2017:01215:30108:One-day-races:Sprinter:None
-Paris-Nice_2017_Stage_8:70:dk:Denmark:Christopher_Juul_jensen:ORICA_Scott_2017:01215:30108:GC:None:None
-Paris-Nice_2017_Stage_8:71:it:Italy:Enrico_Gasparotto:Bahrain_Merida_Pro_Cycling_Team_2017:01215:30108:One-day-races:None:None
-Paris-Nice_2017_Stage_8:72:fr:France:Pierre_Luc_Perichon:Fortuneo_Vital_Concept_2017:01215:30108:GC:One-day-races:None
-Paris-Nice_2017_Stage_8:73:nz:New Zealand:Jack_Bauer:Quick_Step_Floors_2017:01240:30133:Time-Trialist:None:None
-Paris-Nice_2017_Stage_8:74:dk:Denmark:Lars_Ytting_Bak:Lotto_Soudal_2017:01433:30326:GC:None:None
-Paris-Nice_2017_Stage_8:75:dk:Denmark:Magnus_Cort_nielsen:ORICA_Scott_2017:01433:30326:GC:Sprinter:None
-Paris-Nice_2017_Stage_8:76:be:Belgium:Stijn_Vandenbergh:AG2R_La_Mondiale_2017:01433:30326:One-day-races:None:None
-Paris-Nice_2017_Stage_8:77:es:Spain:Jesus_Herrada_Lopez:Movistar_Team_2017:01433:30326:GC:None:None
-Paris-Nice_2017_Stage_8:78:be:Belgium:Tosh_Van_Der_Sande:Lotto_Soudal_2017:01637:30530:One-day-races:Sprinter:None
-Paris-Nice_2017_Stage_8:79:nl:Netherlands:Moreno_Hofland:Lotto_Soudal_2017:01637:30530:Sprinter:None:None
-Paris-Nice_2017_Stage_8:80:fr:France:Cyril_Lemoine:Cofidis,_Solutions_Credits_2017:01637:30530:GC:None:None
-Paris-Nice_2017_Stage_8:81:it:Italy:Fabio_Sabatini:Quick_Step_Floors_2017:01637:30530:Sprinter:None:None
-Paris-Nice_2017_Stage_8:82:sk:Slovakia:Juraj_Sagan:Bora_Hansgrohe_2017:01637:30530:Inexperienced:None:None
-Paris-Nice_2017_Stage_8:83:be:Belgium:Baptiste_Planckaert:Team_Katusha_Alpecin_2017:01637:30530:One-day-races:Sprinter:None
-Paris-Nice_2017_Stage_8:84:de:Germany:Tony_Martin:Team_Katusha_Alpecin_2017:01637:30530:Time-Trialist:GC:None
-Paris-Nice_2017_Stage_8:85:nl:Netherlands:Roy_Curvers:Team_Sunweb_2017:01637:30530:One-day-races:None:None
-Paris-Nice_2017_Stage_8:86:fr:France:Geoffrey_Soupe:Cofidis,_Solutions_Credits_2017:01637:30530:Time-Trialist:None:None
-Paris-Nice_2017_Stage_8:87:be:Belgium:Jelle_Wallays:Lotto_Soudal_2017:01637:30530:One-day-races:None:None
-Paris-Nice_2017_Stage_8:88:au:Australia:Adam_Hansen:Lotto_Soudal_2017:01637:30530:GC:None:None
-Paris-Nice_2017_Stage_8:89:de:Germany:Christian_Knees:Team_Sky_2017:01637:30530:GC:None:None
-Paris-Nice_2017_Stage_8:90:si:Slovenia:Luka_Pibernik:Bahrain_Merida_Pro_Cycling_Team_2017:01637:30530:One-day-races:None:None
-Paris-Nice_2017_Stage_8:91:fr:France:Adrien_Petit:Direct_Energie_2017:01637:30530:One-day-races:Sprinter:None
-Paris-Nice_2017_Stage_8:92:co:Colombia:Winner_Anacona:Movistar_Team_2017:01637:30530:GC:None:None
-Paris-Nice_2017_Stage_8:93:us:United States of America:Benjamin_King_1:Dimension_Data_2017:01637:30530:GC:None:None
-Paris-Nice_2017_Stage_8:94:kz:Kazakhstan:Ruslan_Tleubayev:Astana_Pro_Team_2017:01637:30530:One-day-races:Sprinter:None
-Paris-Nice_2017_Stage_8:95:fr:France:Romain_Combaud:Delko_Marseille_Provence_KTM_2017:01637:30530:Inexperienced:None:None
-Paris-Nice_2017_Stage_8:96:es:Spain:Delio_Fernandez:Delko_Marseille_Provence_KTM_2017:01637:30530:GC:None:None
-Paris-Nice_2017_Stage_8:97:lt:Lithuania:Edvaldas_Siskevicius:Delko_Marseille_Provence_KTM_2017:01637:30530:Time-Trialist:None:None
-Paris-Nice_2017_Stage_8:98:fr:France:Florian_Senechal:Cofidis,_Solutions_Credits_2017:01637:30530:One-day-races:None:None
-Paris-Nice_2017_Stage_8:99:it:Italy:Manuele_Mori:UAE_Team_Emirates_2017:01637:30530:One-day-races:None:None
-Paris-Nice_2017_Stage_8:100:de:Germany:John_Degenkolb:Trek_Segafredo_2017:01637:30530:One-day-races:Sprinter:None
-Paris-Nice_2017_Stage_8:101:de:Germany:nikias_Arndt:Team_Sunweb_2017:01637:30530:Sprinter:None:None
-Paris-Nice_2017_Stage_8:102:ch:Switzerland:Michael_Albasini:ORICA_Scott_2017:01637:30530:One-day-races:None:None
-Paris-Nice_2017_Stage_8:103:it:Italy:Federico_Zurlo:UAE_Team_Emirates_2017:01637:30530:One-day-races:None:None
-Paris-Nice_2017_Stage_8:104:ch:Switzerland:Gregory_Rast:Trek_Segafredo_2017:01637:30530:One-day-races:None:None
-Paris-Nice_2017_Stage_8:105:gb:United Kingdom:Luke_Rowe:Team_Sky_2017:01637:30530:One-day-races:None:None
-Paris-Nice_2017_Stage_8:106:be:Belgium:Dylan_Teuns:BMC_Racing_Team_2017:01637:30530:GC:One-day-races:None
-Paris-Nice_2017_Stage_8:107:be:Belgium:Yves_Lampaert:Quick_Step_Floors_2017:01637:30530:One-day-races:None:None
-Paris-Nice_2017_Stage_8:108:es:Spain:Haimar_Zubeldia:Trek_Segafredo_2017:01637:30530:GC:None:None
-Paris-Nice_2017_Stage_8:109:nl:Netherlands:Tom_Leezer:Team_LottoNL_Jumbo_2017:01637:30530:Time-Trialist:None:None
-Paris-Nice_2017_Stage_8:110:nl:Netherlands:Bram_Tankink:Team_LottoNL_Jumbo_2017:01637:30530:GC:One-day-races:None
-Paris-Nice_2017_Stage_8:111:fr:France:Mickael_Delage:FDJ_2017:01637:30530:One-day-races:None:None
-Paris-Nice_2017_Stage_8:112:fr:France:Laurent_Pichon:Fortuneo_Vital_Concept_2017:01637:30530:One-day-races:None:None
-Paris-Nice_2017_Stage_8:113:fr:France:Olivier_Le_Gac:FDJ_2017:01637:30530:GC:None:None
-Paris-Nice_2017_Stage_8:114:fr:France:Arnaud_Gerard:Fortuneo_Vital_Concept_2017:01637:30530:One-day-races:None:None
-Paris-Nice_2017_Stage_8:115:fr:France:Pierre_Rolland:Cannondale_Drapac_Pro_Cycling_Team_2017:01637:30530:GC:None:None
-Paris-Nice_2017_Stage_8:116:nl:Netherlands:Timo_Roosen:Team_LottoNL_Jumbo_2017:01637:30530:Time-Trialist:None:None
-Paris-Nice_2017_Stage_8:117:lv:Latvia:Gatis_Smukulis:Delko_Marseille_Provence_KTM_2017:01842:30735:Time-Trialist:None:None
-Paris-Nice_2017_Stage_8:118:be:Belgium:Maarten_Wynants:Team_LottoNL_Jumbo_2017:02056:30949:One-day-races:None:None
-Paris-Nice_2017_Stage_8:119:fr:France:Julien_Simon:Cofidis,_Solutions_Credits_2017:02056:30949:One-day-races:None:None
-Paris-Nice_2017_Stage_8:120:no:Norway:Sven_Erik_Bystrm:Team_Katusha_Alpecin_2017:02056:30949:One-day-races:None:None
-Paris-Nice_2017_Stage_8:121:fr:France:Remy_Di_Gregorio:Delko_Marseille_Provence_KTM_2017:02056:30949:GC:None:None
-Paris-Nice_2017_Stage_8:122:si:Slovenia:Kristijan_Koren:Cannondale_Drapac_Pro_Cycling_Team_2017:02056:30949:One-day-races:None:None
-Paris-Nice_2017_Stage_8:123:dz:Algeria:Youcef_Reguigui:Dimension_Data_2017:02056:30949:GC:None:None
-Paris-Nice_2017_Stage_8:124:de:Germany:Robert_Wagner:Team_LottoNL_Jumbo_2017:02056:30949:One-day-races:Sprinter:None
-Paris-Nice_2017_Stage_8:125:au:Australia:Mitchell_Docker:ORICA_Scott_2017:02056:30949:One-day-races:None:None
-Paris-Nice_2017_Stage_8:126:nl:Netherlands:Dylan_Groenewegen:Team_LottoNL_Jumbo_2017:02056:30949:One-day-races:Sprinter:None
-Paris-Nice_2017_Stage_8:127:er:Eritrea:Natnael_Berhane:Dimension_Data_2017:02056:30949:GC:None:None
-Paris-Nice_2017_Stage_8:128:lt:Lithuania:Ignatas_Konovalovas:FDJ_2017:02056:30949:GC:None:None
-Paris-Nice_2017_Stage_8:DNF:it:Italy:Davide_Cimolai:FDJ_2017:-:595959:One-day-races:Sprinter:None
-Paris-Nice_2017_Stage_8:DNF:fr:France:Julien_Morice:Direct_Energie_2017:-:595959:Inexperienced:None:None
-Paris-Nice_2017_Stage_8:DNF:ca:Canada:Antoine_Duchesne:Direct_Energie_2017:-:595959:One-day-races:None:None
-Paris-Nice_2017_Stage_8:DNF:es:Spain:Fran_Ventoso:BMC_Racing_Team_2017:-:595959:One-day-races:Sprinter:None
-Paris-Nice_2017_Stage_8:DNF:at:Austria:Michael_Gogl:Trek_Segafredo_2017:-:595959:Inexperienced:None:None
-Paris-Nice_2017_Stage_8:DNF:be:Belgium:Edward_Theuns:Trek_Segafredo_2017:-:595959:One-day-races:Sprinter:None
-Paris-Nice_2017_Stage_8:DNF:at:Austria:Marco_Haller:Team_Katusha_Alpecin_2017:-:595959:Sprinter:None:None
-Paris-Nice_2017_Stage_8:DNF:fr:France:Marc_Sarreau:FDJ_2017:-:595959:One-day-races:Sprinter:None
-Paris-Nice_2017_Stage_8:DNF:au:Australia:Mathew_Hayman:ORICA_Scott_2017:-:595959:One-day-races:None:None
-Paris-Nice_2017_Stage_8:DNF:us:United States of America:Tyler_Farrar:Dimension_Data_2017:-:595959:Sprinter:None:None
-Paris-Nice_2017_Stage_8:DNF:be:Belgium:Zico_Waeytens:Team_Sunweb_2017:-:595959:GC:One-day-races:None
-Paris-Nice_2017_Stage_8:DNF:de:Germany:Marcel_Kittel:Quick_Step_Floors_2017:-:595959:Sprinter:None:None
-Paris-Nice_2017_Stage_8:DNF:dk:Denmark:Matti_Breschel:Astana_Pro_Team_2017:-:595959:One-day-races:Sprinter:None
-Paris-Nice_2017_Stage_8:DNF:fr:France:Angelo_Tulik:Direct_Energie_2017:-:595959:One-day-races:None:None
-Paris-Nice_2017_Stage_8:DNF:ie:Ireland:Sam_Bennett:Bora_Hansgrohe_2017:-:595959:One-day-races:Sprinter:None
-Paris-Nice_2017_Stage_8:DNF:sk:Slovakia:Michael_Kolar:Bora_Hansgrohe_2017:-:595959:One-day-races:Sprinter:None
-Paris-Nice_2017_Stage_8:DNF:dk:Denmark:Michael_Morkov:Team_Katusha_Alpecin_2017:-:595959:Sprinter:None:None
-Paris-Nice_2017_Stage_8:DNF:si:Slovenia:Grega_Bole:Bahrain_Merida_Pro_Cycling_Team_2017:-:595959:One-day-races:Sprinter:None
-Paris-Nice_2017_Stage_8:DNF:si:Slovenia:Borut_Bozic:Bahrain_Merida_Pro_Cycling_Team_2017:-:595959:One-day-races:Sprinter:None
-Paris-Nice_2017_Stage_8:DNS:es:Spain:Alberto_Losada:Team_Katusha_Alpecin_2017:-:595959:GC:None:None
-Paris-Nice_2017_Stage_8:DNS:nl:Netherlands:Tom_Stamsnijder:Team_Sunweb_2017:-:595959:GC:None:None
-Paris-Nice_2017_Stage_8:DNS:it:Italy:Jacopo_Guarnieri:FDJ_2017:-:595959:One-day-races:Sprinter:None
-Paris-Nice_2017_Stage_8:DNS:no:Norway:Alexander_Kristoff:Team_Katusha_Alpecin_2017:-:595959:One-day-races:Sprinter:None
+Giro_dItalia_2017_Stage_16:1:it:Italy:Vincenzo_nibali:Bahrain_Merida_Pro_Cycling_Team_2017:62422:62422:GC:None:None
+Giro_dItalia_2017_Stage_16:2:es:Spain:Mikel_Landa:Team_Sky_2017:00000:62422:GC:None:None
+Giro_dItalia_2017_Stage_16:3:co:Colombia:nairo_Quintana:Movistar_Team_2017:00012:62434:GC:None:None
+Giro_dItalia_2017_Stage_16:4:it:Italy:Domenico_Pozzovivo:AG2R_La_Mondiale_2017:00024:62446:GC:None:None
+Giro_dItalia_2017_Stage_16:5:ru:Russian Federation:Ilnur_Zakarin:Team_Katusha_Alpecin_2017:00034:62456:GC:None:None
+Giro_dItalia_2017_Stage_16:6:it:Italy:Davide_Formolo:Cannondale_Drapac_Pro_Cycling_Team_2017:00126:62548:GC:None:None
+Giro_dItalia_2017_Stage_16:7:nl:Netherlands:Bauke_Mollema:Trek_Segafredo_2017:00135:62557:GC:None:None
+Giro_dItalia_2017_Stage_16:8:lu:Luxembourg:Bob_Jungels:Quick_Step_Floors_2017:00135:62557:GC:None:None
+Giro_dItalia_2017_Stage_16:9:gb:United Kingdom:Adam_Yates:ORICA_Scott_2017:00135:62557:GC:One-day-races:None
+Giro_dItalia_2017_Stage_16:10:fr:France:Thibaut_Pinot:FDJ_2017:00135:62557:GC:None:None
+Giro_dItalia_2017_Stage_16:11:cz:Czech Republic:Jan_Hirt:CCC_Sprandi_Polkowice_2017:00135:62557:GC:None:None
+Giro_dItalia_2017_Stage_16:12:nl:Netherlands:Steven_Kruijswijk:Team_LottoNL_Jumbo_2017:00135:62557:GC:None:None
+Giro_dItalia_2017_Stage_16:13:nl:Netherlands:Tom_Dumoulin:Team_Sunweb_2017:00218:62640:Time-Trialist:GC:None
+Giro_dItalia_2017_Stage_16:14:si:Slovenia:Jan_Polanc:UAE_Team_Emirates_2017:00510:62932:GC:One-day-races:None
+Giro_dItalia_2017_Stage_16:15:be:Belgium:Maxime_Monfort:Lotto_Soudal_2017:00517:62939:GC:None:None
+Giro_dItalia_2017_Stage_16:16:it:Italy:Simone_Petilli:UAE_Team_Emirates_2017:00519:62941:One-day-races:None:None
+Giro_dItalia_2017_Stage_16:17:ch:Switzerland:Sebastien_Reichenbach:FDJ_2017:00607:63029:GC:None:None
+Giro_dItalia_2017_Stage_16:18:at:Austria:Gregor_Muhlberger:Bora_Hansgrohe_2017:00641:63103:One-day-races:None:None
+Giro_dItalia_2017_Stage_16:19:at:Austria:Patrick_Konrad:Bora_Hansgrohe_2017:00641:63103:GC:None:None
+Giro_dItalia_2017_Stage_16:20:it:Italy:Dario_Cataldo:Astana_Pro_Team_2017:00730:63152:GC:None:None
+Giro_dItalia_2017_Stage_16:21:co:Colombia:Winner_Anacona:Movistar_Team_2017:00746:63208:GC:None:None
+Giro_dItalia_2017_Stage_16:22:cr:Costa Rica:Andrey_Amador:Movistar_Team_2017:00746:63208:GC:None:None
+Giro_dItalia_2017_Stage_16:23:es:Spain:Igor_Anton:Dimension_Data_2017:00746:63208:GC:None:None
+Giro_dItalia_2017_Stage_16:24:es:Spain:Gorka_Izagirre:Movistar_Team_2017:00746:63208:GC:None:None
+Giro_dItalia_2017_Stage_16:25:it:Italy:Franco_Pellizotti:Bahrain_Merida_Pro_Cycling_Team_2017:00746:63208:GC:One-day-races:None
+Giro_dItalia_2017_Stage_16:26:fr:France:Hubert_Dupont:AG2R_La_Mondiale_2017:00752:63214:GC:None:None
+Giro_dItalia_2017_Stage_16:27:nl:Netherlands:Stef_Clement:Team_LottoNL_Jumbo_2017:01205:63627:Time-Trialist:GC:None
+Giro_dItalia_2017_Stage_16:28:cz:Czech Republic:Michal_Schlegel:CCC_Sprandi_Polkowice_2017:01310:63732:Inexperienced:None:None
+Giro_dItalia_2017_Stage_16:29:us:United States of America:Tejay_Van_Garderen:BMC_Racing_Team_2017:01636:64058:GC:None:None
+Giro_dItalia_2017_Stage_16:30:hr:Croatia:Robert_Kiserlovski:Team_Katusha_Alpecin_2017:01636:64058:GC:None:None
+Giro_dItalia_2017_Stage_16:31:it:Italy:Eros_Capecchi:Quick_Step_Floors_2017:01838:64300:GC:None:None
+Giro_dItalia_2017_Stage_16:32:fr:France:Pierre_Rolland:Cannondale_Drapac_Pro_Cycling_Team_2017:01838:64300:GC:None:None
+Giro_dItalia_2017_Stage_16:33:nl:Netherlands:Laurens_Ten_Dam:Team_Sunweb_2017:02027:64449:GC:None:None
+Giro_dItalia_2017_Stage_16:34:es:Spain:Jesus_Hernandez_3:Trek_Segafredo_2017:02042:64504:GC:None:None
+Giro_dItalia_2017_Stage_16:35:es:Spain:Ruben_Plaza:ORICA_Scott_2017:02042:64504:GC:None:None
+Giro_dItalia_2017_Stage_16:36:fr:France:Francois_Bidard:AG2R_La_Mondiale_2017:02151:64613:Inexperienced:None:None
+Giro_dItalia_2017_Stage_16:37:dk:Denmark:Jesper_Hansen_1:Astana_Pro_Team_2017:02217:64639:GC:None:None
+Giro_dItalia_2017_Stage_16:38:it:Italy:Manuel_Senni:BMC_Racing_Team_2017:02227:64649:Inexperienced:None:None
+Giro_dItalia_2017_Stage_16:39:pl:Poland:Tomasz_Marczynski:Lotto_Soudal_2017:02227:64649:GC:None:None
+Giro_dItalia_2017_Stage_16:40:ch:Switzerland:Silvan_Dillier:BMC_Racing_Team_2017:02227:64649:Time-Trialist:None:None
+Giro_dItalia_2017_Stage_16:41:za:South Africa:Jacques_Janse_van_Rensburg:Dimension_Data_2017:02227:64649:GC:None:None
+Giro_dItalia_2017_Stage_16:42:be:Belgium:Laurens_De_Plus:Quick_Step_Floors_2017:02227:64649:Inexperienced:None:None
+Giro_dItalia_2017_Stage_16:43:co:Colombia:Daniel_Felipe_Martinez:Wilier_Triestina_Selle_Italia_2017:02323:64745:Inexperienced:None:None
+Giro_dItalia_2017_Stage_16:44:pt:Portugal:Jose_Mendes:Bora_Hansgrohe_2017:02323:64745:GC:None:None
+Giro_dItalia_2017_Stage_16:45:us:United States of America:Peter_Stetina:Trek_Segafredo_2017:02323:64745:GC:None:None
+Giro_dItalia_2017_Stage_16:46:it:Italy:Enrico_Gasparotto:Bahrain_Merida_Pro_Cycling_Team_2017:02342:64804:One-day-races:None:None
+Giro_dItalia_2017_Stage_16:47:pt:Portugal:Rui_Costa:UAE_Team_Emirates_2017:02433:64855:GC:One-day-races:None
+Giro_dItalia_2017_Stage_16:48:ru:Russian Federation:Alexander_Foliforov:Gazprom_RusVelo_2017:02433:64855:Inexperienced:None:None
+Giro_dItalia_2017_Stage_16:49:us:United States of America:Joe_Dombrowski:Cannondale_Drapac_Pro_Cycling_Team_2017:02437:64859:GC:None:None
+Giro_dItalia_2017_Stage_16:50:er:Eritrea:Natnael_Berhane:Dimension_Data_2017:02452:64914:GC:None:None
+Giro_dItalia_2017_Stage_16:51:at:Austria:Felix_Grossschartner:CCC_Sprandi_Polkowice_2017:02503:64925:GC:None:None
+Giro_dItalia_2017_Stage_16:52:pt:Portugal:Jose_Goncalves:Team_Katusha_Alpecin_2017:02514:64936:GC:None:None
+Giro_dItalia_2017_Stage_16:53:nl:Netherlands:Tom_Jelte_Slagter:Cannondale_Drapac_Pro_Cycling_Team_2017:02551:65013:One-day-races:None:None
+Giro_dItalia_2017_Stage_16:54:de:Germany:Simon_Geschke:Team_Sunweb_2017:02948:65410:One-day-races:None:None
+Giro_dItalia_2017_Stage_16:55:us:United States of America:Chad_Haga:Team_Sunweb_2017:02948:65410:Time-Trialist:GC:None
+Giro_dItalia_2017_Stage_16:56:es:Spain:Jose_Herrada:Movistar_Team_2017:03007:65429:GC:None:None
+Giro_dItalia_2017_Stage_16:57:ie:Ireland:Philip_Deignan:Team_Sky_2017:03007:65429:GC:None:None
+Giro_dItalia_2017_Stage_16:58:co:Colombia:Sebastian_Henao:Team_Sky_2017:03007:65429:GC:None:None
+Giro_dItalia_2017_Stage_16:59:by:Belarus:Kanstantsin_Siutsou:Bahrain_Merida_Pro_Cycling_Team_2017:03308:65730:GC:None:None
+Giro_dItalia_2017_Stage_16:60:it:Italy:Giovanni_Visconti:Bahrain_Merida_Pro_Cycling_Team_2017:03308:65730:One-day-races:None:None
+Giro_dItalia_2017_Stage_16:61:ru:Russian Federation:Matvey_Mamykin:Team_Katusha_Alpecin_2017:03308:65730:Inexperienced:None:None
+Giro_dItalia_2017_Stage_16:62:nl:Netherlands:Martijn_Keizer:Team_LottoNL_Jumbo_2017:03308:65730:GC:None:None
+Giro_dItalia_2017_Stage_16:63:es:Spain:Carlos_Verona:ORICA_Scott_2017:03308:65730:GC:None:None
+Giro_dItalia_2017_Stage_16:64:es:Spain:Victor_De_La_Parte:Movistar_Team_2017:03308:65730:GC:None:None
+Giro_dItalia_2017_Stage_16:65:es:Spain:Julen_Amezqueta:Wilier_Triestina_Selle_Italia_2017:03308:65730:Inexperienced:None:None
+Giro_dItalia_2017_Stage_16:66:ch:Switzerland:Steve_Morabito:FDJ_2017:03308:65730:GC:None:None
+Giro_dItalia_2017_Stage_16:67:pl:Poland:Lukasz_Owsian:CCC_Sprandi_Polkowice_2017:03308:65730:Inexperienced:None:None
+Giro_dItalia_2017_Stage_16:68:lu:Luxembourg:Ben_Gastauer:AG2R_La_Mondiale_2017:03308:65730:GC:None:None
+Giro_dItalia_2017_Stage_16:69:fr:France:Rudy_Molard:FDJ_2017:03308:65730:GC:One-day-races:None
+Giro_dItalia_2017_Stage_16:70:fr:France:Julien_Bernard:Trek_Segafredo_2017:03308:65730:Inexperienced:None:None
+Giro_dItalia_2017_Stage_16:71:fr:France:Jeremy_Roy:FDJ_2017:03308:65730:GC:None:None
+Giro_dItalia_2017_Stage_16:72:nl:Netherlands:Bram_Tankink:Team_LottoNL_Jumbo_2017:03308:65730:GC:One-day-races:None
+Giro_dItalia_2017_Stage_16:73:it:Italy:Matteo_Montaguti:AG2R_La_Mondiale_2017:03308:65730:One-day-races:None:None
+Giro_dItalia_2017_Stage_16:74:ca:Canada:Michael_Woods:Cannondale_Drapac_Pro_Cycling_Team_2017:03308:65730:GC:One-day-races:None
+Giro_dItalia_2017_Stage_16:75:es:Spain:Fran_Ventoso:BMC_Racing_Team_2017:03308:65730:One-day-races:Sprinter:None
+Giro_dItalia_2017_Stage_16:76:it:Italy:Matteo_Busato:Wilier_Triestina_Selle_Italia_2017:03325:65747:GC:One-day-races:None
+Giro_dItalia_2017_Stage_16:77:it:Italy:Cesare_Benedetti:Bora_Hansgrohe_2017:03358:65820:One-day-races:None:None
+Giro_dItalia_2017_Stage_16:78:it:Italy:Edward_Ravasi:UAE_Team_Emirates_2017:03444:65906:Inexperienced:None:None
+Giro_dItalia_2017_Stage_16:79:es:Spain:Luis_Leon_Sanchez:Astana_Pro_Team_2017:03444:65906:GC:None:None
+Giro_dItalia_2017_Stage_16:80:by:Belarus:Vasil_Kiryienka:Team_Sky_2017:03610:70032:Time-Trialist:None:None
+Giro_dItalia_2017_Stage_16:81:es:Spain:Pello_Bilbao:Astana_Pro_Team_2017:03718:70140:GC:One-day-races:None
+Giro_dItalia_2017_Stage_16:82:es:Spain:Omar_Fraile:Dimension_Data_2017:03718:70140:GC:One-day-races:None
+Giro_dItalia_2017_Stage_16:83:at:Austria:Georg_Preidler:Team_Sunweb_2017:04001:70423:Time-Trialist:None:None
+Giro_dItalia_2017_Stage_16:84:es:Spain:Jose_Joaquin_Rojas:Movistar_Team_2017:04026:70448:One-day-races:Sprinter:None
+Giro_dItalia_2017_Stage_16:85:au:Australia:Rory_Sutherland:Movistar_Team_2017:04026:70448:GC:None:None
+Giro_dItalia_2017_Stage_16:86:kz:Kazakhstan:Andrey_Zeits:Astana_Pro_Team_2017:04026:70448:GC:None:None
+Giro_dItalia_2017_Stage_16:87:no:Norway:Sindre_Skjoestad_Lunke:Team_Sunweb_2017:04026:70448:Inexperienced:None:None
+Giro_dItalia_2017_Stage_16:88:be:Belgium:Dylan_Teuns:BMC_Racing_Team_2017:04026:70448:GC:One-day-races:None
+Giro_dItalia_2017_Stage_16:89:be:Belgium:Pieter_Serry:Quick_Step_Floors_2017:04026:70448:One-day-races:None:None
+Giro_dItalia_2017_Stage_16:90:nl:Netherlands:Twan_Castelijns:Team_LottoNL_Jumbo_2017:04026:70448:Inexperienced:None:None
+Giro_dItalia_2017_Stage_16:91:it:Italy:Valerio_Conti:UAE_Team_Emirates_2017:04026:70448:GC:One-day-races:None
+Giro_dItalia_2017_Stage_16:92:ru:Russian Federation:Maxim_Belkov:Team_Katusha_Alpecin_2017:04026:70448:Time-Trialist:GC:None
+Giro_dItalia_2017_Stage_16:93:fr:France:Benoit_Vaugrenard:FDJ_2017:04026:70448:One-day-races:None:None
+Giro_dItalia_2017_Stage_16:94:it:Italy:Giulio_Ciccone:Bardiani_CSF_2017:04708:71130:Inexperienced:None:None
+Giro_dItalia_2017_Stage_16:95:be:Belgium:Jurgen_Van_Den_Broeck:Team_LottoNL_Jumbo_2017:04708:71130:GC:None:None
+Giro_dItalia_2017_Stage_16:96:nl:Netherlands:Moreno_Hofland:Lotto_Soudal_2017:04708:71130:Sprinter:None:None
+Giro_dItalia_2017_Stage_16:97:at:Austria:Lukas_Postlberger:Bora_Hansgrohe_2017:04708:71130:Inexperienced:None:None
+Giro_dItalia_2017_Stage_16:98:cz:Czech Republic:Jan_Barta:Bora_Hansgrohe_2017:04708:71130:Time-Trialist:GC:None
+Giro_dItalia_2017_Stage_16:99:ru:Russian Federation:Pavel_Brutt:Gazprom_RusVelo_2017:04708:71130:One-day-races:None:None
+Giro_dItalia_2017_Stage_16:100:ie:Ireland:Sam_Bennett:Bora_Hansgrohe_2017:04708:71130:One-day-races:Sprinter:None
+Giro_dItalia_2017_Stage_16:101:it:Italy:Manuel_Quinziato:BMC_Racing_Team_2017:04708:71130:Time-Trialist:None:None
+Giro_dItalia_2017_Stage_16:102:it:Italy:Valerio_Agnoli:Bahrain_Merida_Pro_Cycling_Team_2017:04722:71144:GC:None:None
+Giro_dItalia_2017_Stage_16:103:be:Belgium:Jasper_Stuyven:Trek_Segafredo_2017:04722:71144:One-day-races:None:None
+Giro_dItalia_2017_Stage_16:104:es:Spain:Cristian_Rodriguez:Wilier_Triestina_Selle_Italia_2017:04722:71144:Inexperienced:None:None
+Giro_dItalia_2017_Stage_16:105:er:Eritrea:Daniel_Teklehaimanot:Dimension_Data_2017:04722:71144:Time-Trialist:None:None
+Giro_dItalia_2017_Stage_16:106:ru:Russian Federation:Sergey_Firsanov:Gazprom_RusVelo_2017:04722:71144:GC:None:None
+Giro_dItalia_2017_Stage_16:107:it:Italy:Salvatore_Puccio:Team_Sky_2017:04722:71144:Time-Trialist:None:None
+Giro_dItalia_2017_Stage_16:108:it:Italy:Enrico_Battaglin:Team_LottoNL_Jumbo_2017:04722:71144:One-day-races:Sprinter:None
+Giro_dItalia_2017_Stage_16:109:ru:Russian Federation:Ivan_Rovny:Gazprom_RusVelo_2017:04722:71144:One-day-races:None:None
+Giro_dItalia_2017_Stage_16:110:it:Italy:Filippo_Pozzato:Wilier_Triestina_Selle_Italia_2017:04722:71144:One-day-races:None:None
+Giro_dItalia_2017_Stage_16:111:it:Italy:Diego_Rosa:Team_Sky_2017:04722:71144:GC:One-day-races:None
+Giro_dItalia_2017_Stage_16:112:it:Italy:Paolo_Tiralongo:Astana_Pro_Team_2017:04722:71144:GC:None:None
+Giro_dItalia_2017_Stage_16:113:it:Italy:Marco_Marcato:UAE_Team_Emirates_2017:04722:71144:One-day-races:None:None
+Giro_dItalia_2017_Stage_16:114:au:Australia:Michael_Hepburn:ORICA_Scott_2017:04722:71144:Time-Trialist:None:None
+Giro_dItalia_2017_Stage_16:115:it:Italy:Kristian_Sbaragli:Dimension_Data_2017:04722:71144:One-day-races:Sprinter:None
+Giro_dItalia_2017_Stage_16:116:ca:Canada:Svein_Tuft:ORICA_Scott_2017:04722:71144:Time-Trialist:None:None
+Giro_dItalia_2017_Stage_16:117:fr:France:Matthieu_Ladagnous:FDJ_2017:04722:71144:GC:One-day-races:None
+Giro_dItalia_2017_Stage_16:118:it:Italy:Simone_Ponzi:CCC_Sprandi_Polkowice_2017:04722:71144:One-day-races:Sprinter:None
+Giro_dItalia_2017_Stage_16:119:si:Slovenia:Jan_Tratnik:CCC_Sprandi_Polkowice_2017:04722:71144:GC:One-day-races:None
+Giro_dItalia_2017_Stage_16:120:pl:Poland:Maciej_Paterski:CCC_Sprandi_Polkowice_2017:04722:71144:One-day-races:None:None
+Giro_dItalia_2017_Stage_16:121:au:Australia:Adam_Hansen:Lotto_Soudal_2017:04722:71144:GC:None:None
+Giro_dItalia_2017_Stage_16:122:us:United States of America:Joey_Rosskopf:BMC_Racing_Team_2017:04722:71144:GC:None:None
+Giro_dItalia_2017_Stage_16:123:be:Belgium:Jasper_De_Buyst:Lotto_Soudal_2017:04722:71144:One-day-races:None:None
+Giro_dItalia_2017_Stage_16:124:se:Sweden:Tobias_Ludvigsson:FDJ_2017:04722:71144:Time-Trialist:GC:None
+Giro_dItalia_2017_Stage_16:125:fr:France:Clement_Chevrier:AG2R_La_Mondiale_2017:04722:71144:Inexperienced:None:None
+Giro_dItalia_2017_Stage_16:126:pl:Poland:Michal_Golas:Team_Sky_2017:04722:71144:One-day-races:None:None
+Giro_dItalia_2017_Stage_16:127:dk:Denmark:Christopher_Juul_jensen:ORICA_Scott_2017:04722:71144:GC:None:None
+Giro_dItalia_2017_Stage_16:128:si:Slovenia:Matej_Mohoric:UAE_Team_Emirates_2017:04722:71144:GC:One-day-races:None
+Giro_dItalia_2017_Stage_16:129:si:Slovenia:Luka_Mezgec:ORICA_Scott_2017:04722:71144:Sprinter:None:None
+Giro_dItalia_2017_Stage_16:130:fr:France:Julien_Berard:AG2R_La_Mondiale_2017:04722:71144:GC:One-day-races:None
+Giro_dItalia_2017_Stage_16:131:it:Italy:Davide_Villella:Cannondale_Drapac_Pro_Cycling_Team_2017:04722:71144:One-day-races:None:None
+Giro_dItalia_2017_Stage_16:132:gb:United Kingdom:Hugh_Carthy:Cannondale_Drapac_Pro_Cycling_Team_2017:04722:71144:GC:None:None
+Giro_dItalia_2017_Stage_16:133:by:Belarus:Ilia_Koshevoy:Wilier_Triestina_Selle_Italia_2017:04722:71144:Inexperienced:None:None
+Giro_dItalia_2017_Stage_16:134:dk:Denmark:Mads_Pedersen:Trek_Segafredo_2017:04722:71144:GC:None:None
+Giro_dItalia_2017_Stage_16:135:fr:France:Quentin_Jauregui:AG2R_La_Mondiale_2017:04722:71144:GC:None:None
+Giro_dItalia_2017_Stage_16:136:es:Spain:Angel_Vicioso:Team_Katusha_Alpecin_2017:04739:71201:GC:None:None
+Giro_dItalia_2017_Stage_16:137:it:Italy:Manuele_Boaro:Bahrain_Merida_Pro_Cycling_Team_2017:04739:71201:Time-Trialist:GC:None
+Giro_dItalia_2017_Stage_16:138:al:Albania:Eugert_Zhupa:Wilier_Triestina_Selle_Italia_2017:05121:71543:Inexperienced:None:None
+Giro_dItalia_2017_Stage_16:139:nl:Netherlands:Jos_Van_Emden:Team_LottoNL_Jumbo_2017:05121:71543:Time-Trialist:None:None
+Giro_dItalia_2017_Stage_16:140:ru:Russian Federation:Alexey_Tsatevich:Gazprom_RusVelo_2017:05121:71543:One-day-races:Sprinter:None
+Giro_dItalia_2017_Stage_16:141:ru:Russian Federation:Viacheslav_Kuznetsov:Team_Katusha_Alpecin_2017:05121:71543:GC:One-day-races:None
+Giro_dItalia_2017_Stage_16:142:co:Colombia:Rendon_Gaviria:Quick_Step_Floors_2017:05121:71543:One-day-races:Sprinter:None
+Giro_dItalia_2017_Stage_16:143:si:Slovenia:Luka_Pibernik:Bahrain_Merida_Pro_Cycling_Team_2017:05121:71543:One-day-races:None:None
+Giro_dItalia_2017_Stage_16:144:de:Germany:Phil_Bauhaus:Team_Sunweb_2017:05121:71543:One-day-races:Sprinter:None
+Giro_dItalia_2017_Stage_16:145:it:Italy:Davide_Martinelli:Quick_Step_Floors_2017:05121:71543:One-day-races:None:None
+Giro_dItalia_2017_Stage_16:146:dk:Denmark:Lars_Ytting_Bak:Lotto_Soudal_2017:05121:71543:GC:None:None
+Giro_dItalia_2017_Stage_16:147:za:South Africa:Johann_Van_Zyl:Dimension_Data_2017:05121:71543:Inexperienced:None:None
+Giro_dItalia_2017_Stage_16:148:ru:Russian Federation:Evgeny_Shalunov:Gazprom_RusVelo_2017:05121:71543:GC:One-day-races:None
+Giro_dItalia_2017_Stage_16:149:it:Italy:Sacha_Modolo:UAE_Team_Emirates_2017:05121:71543:Sprinter:None:None
+Giro_dItalia_2017_Stage_16:150:ru:Russian Federation:Dmitry_Kozonchuk:Gazprom_RusVelo_2017:05121:71543:GC:None:None
+Giro_dItalia_2017_Stage_16:151:ru:Russian Federation:Sergey_Lagutin:Gazprom_RusVelo_2017:05121:71543:GC:One-day-races:None
+Giro_dItalia_2017_Stage_16:152:nl:Netherlands:Tom_Stamsnijder:Team_Sunweb_2017:05121:71543:GC:None:None
+Giro_dItalia_2017_Stage_16:153:si:Slovenia:Kristijan_Koren:Cannondale_Drapac_Pro_Cycling_Team_2017:05121:71543:One-day-races:None:None
+Giro_dItalia_2017_Stage_16:154:us:United States of America:Alex_Howes:Cannondale_Drapac_Pro_Cycling_Team_2017:05121:71543:GC:One-day-races:None
+Giro_dItalia_2017_Stage_16:155:pl:Poland:Marcin_Bialoblocki:CCC_Sprandi_Polkowice_2017:05121:71543:Time-Trialist:None:None
+Giro_dItalia_2017_Stage_16:156:it:Italy:Eugenio_Alafaci:Trek_Segafredo_2017:05204:71626:Inexperienced:None:None
+Giro_dItalia_2017_Stage_16:157:it:Italy:Mirco_Maestri:Bardiani_CSF_2017:05208:71630:Inexperienced:None:None
+Giro_dItalia_2017_Stage_16:158:kz:Kazakhstan:Zhandos_Bizhigitov:Astana_Pro_Team_2017:05208:71630:Inexperienced:None:None
+Giro_dItalia_2017_Stage_16:159:it:Italy:Enrico_Barbin:Bardiani_CSF_2017:05208:71630:One-day-races:None:None
+Giro_dItalia_2017_Stage_16:160:it:Italy:Simone_Andreetta:Bardiani_CSF_2017:05215:71637:Inexperienced:None:None
+Giro_dItalia_2017_Stage_16:161:it:Italy:Lorenzo_Rota:Bardiani_CSF_2017:05215:71637:One-day-races:None:None
+Giro_dItalia_2017_Stage_16:162:it:Italy:Giuseppe_Fonzi:Wilier_Triestina_Selle_Italia_2017:05218:71640:Inexperienced:None:None
+Giro_dItalia_2017_Stage_16:163:be:Belgium:Iljo_Keisse:Quick_Step_Floors_2017:05218:71640:One-day-races:None:None
+Giro_dItalia_2017_Stage_16:164:by:Belarus:Branislau_Samoilau:CCC_Sprandi_Polkowice_2017:05222:71644:GC:None:None
+Giro_dItalia_2017_Stage_16:165:it:Italy:Roberto_Ferrari:UAE_Team_Emirates_2017:05222:71644:Sprinter:None:None
+Giro_dItalia_2017_Stage_16:166:it:Italy:Nicola_Boem:Bardiani_CSF_2017:05222:71644:GC:Sprinter:None
+Giro_dItalia_2017_Stage_16:167:be:Belgium:Dries_Devenyns:Quick_Step_Floors_2017:05228:71650:GC:One-day-races:None
+Giro_dItalia_2017_Stage_16:168:ar:Argentina:Ariel_Maximiliano_Richeze:Quick_Step_Floors_2017:05228:71650:Sprinter:None:None
+Giro_dItalia_2017_Stage_16:169:es:Spain:Alberto_Losada:Team_Katusha_Alpecin_2017:05232:71654:GC:None:None
+Giro_dItalia_2017_Stage_16:0:be:Belgium:Victor_Campenaerts:Team_LottoNL_Jumbo_2017:-:595959:Time-Trialist:None:None
+Giro_dItalia_2017_Stage_16:0:it:Italy:Daniele_Bennati:Movistar_Team_2017:-:595959:Sprinter:None:None
+Giro_dItalia_2017_Stage_16:0:be:Belgium:Sean_De_Bie:Lotto_Soudal_2017:-:595959:One-day-races:None:None
+Giro_dItalia_2017_Stage_16:0:be:Belgium:Ben_Hermans:BMC_Racing_Team_2017:-:595959:GC:None:None
+Giro_dItalia_2017_Stage_16:0:fr:France:Kenny_Elissonde:Team_Sky_2017:-:595959:GC:None:None
+Giro_dItalia_2017_Stage_16:0:it:Italy:Vincenzo_Albanese:Bardiani_CSF_2017:-:595959:Inexperienced:None:None
+Giro_dItalia_2017_Stage_16:0:fr:France:William_Bonnet:FDJ_2017:-:595959:One-day-races:Sprinter:None
+Giro_dItalia_2017_Stage_16:0:au:Australia:Alexander_Edmondson:ORICA_Scott_2017:-:595959:Inexperienced:None:None
+Giro_dItalia_2017_Stage_16:0:za:South Africa:Ryan_Gibbons:Dimension_Data_2017:-:595959:Inexperienced:None:None
